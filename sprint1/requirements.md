@@ -27,5 +27,4 @@
 |            022 |           011 | The seller should be able to see these ratings on their listed venues to review | WORKING |
 |            023 |           012 | The sellers should be able to click on a rating system on the users to leave their rating | WORKING |
 |            024 |           012 | Each user should be able to review their own personal ratings on their accounts | WORKING |
-
 |            ID# |           ID# | TEMPLATE | WORKING/DONE/VERIFIED |
