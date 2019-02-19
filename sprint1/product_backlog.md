@@ -10,7 +10,7 @@
 | 005 | As a user, I want to be able to receive payment for my listed venues, so that I can make money. | 8 | 1 | When I lease my venue I should receive payment. | WORKING |
 | 006 | As a user, I want to be able to log into a website to perform all actions, so I can visit the site multiple times and have an easy to use interface. | 8 | 1 | When I type in the website name into the address bar it should appear. | WORKING |
 | 007 | As a user, I want to be able to blacklist users from venue, so I don't need to do business with them again. | 8 | 2 | When I add users to my blacklist they should not be able to interact with me | WORKING|
-| 008 | As a admin, I want to make sure my users are over 18, so that we follow leasing laws. | 2 | 2 | When they make an account they must put in their birth date and it should verify they are over 18. | WORKING|
+| 008 | As an admin, I want to make sure my users are over 18, so that we follow leasing laws. | 2 | 2 | When they make an account they must put in their birth date and it should verify they are over 18. | WORKING|
 | 009 | As a user, I want to have a profile picture so that I can be unique. | 2 | 2 | When I upload a picture it should go on my profile.  | WORKING|
 | 010 | As a user, I want to be able to rate the venues I have used so that other people will know what are the best venues | 2 | 2 | When I give a venue a star rating it should display on their page.  | WORKING|
 | 011 | As a user, I want to be able to rate users that have rented my venues. | 2 | 2 | When I give a user a star rating it should display on their profile. | WORKING|
