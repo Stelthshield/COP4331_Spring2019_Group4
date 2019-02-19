@@ -22,5 +22,6 @@ Our product is targeted towards the general consumer audience ages 18+ globally 
   - [Class Diagrams](https://imgur.com/a/Z2U1CMO)
 - [Source Code](https://github.com/Stelthshield/COP4331_Spring2019_Group4/tree/master/venue)
 - [Test Cases](https://github.com/Stelthshield/COP4331_Spring2019_Group4/blob/master/sprint1/tests.md)
-- Product Demonstration: [Youtube link]
+- Product Demonstration:  
+![](https://i.imgur.com/rl9ojJv.png)
 - Website Link: [Heroku link]
