@@ -10,6 +10,7 @@ Populate each section with information as it applies to your project. If a secti
 
 - Users are over 18 years old
 - Reviewers can be under 18 years old
+- Users must have valid payment option on their account such as credit card
 
 # User Interface Design
 
