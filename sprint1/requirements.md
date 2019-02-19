@@ -31,3 +31,11 @@
 |            026 |           014 | Each user should be able to delete their account under account settings with a button | WORKING |
 |            027 |           015 | Each user should be able to write text commments on venue listings | WORKING |
 |            028 |           015 | Users should be able to see a list of other users' comments on a venue listing | WORKING |
+|            029 |           016 | Each user should be able to modify exisiting listings in an editing interface that opens with an edit button. | WORKING |
+|            030 |           017 | The website should be hosted on an efficient, fast-loading server. | WORKING |
+|            031 |           018 | Each user should be able to edit their profile and include a text-based biography | WORKING |
+|            032 |           018 | Other users should be able to see other user accounts' profile biography | WORKING |
+|            033 |           019 | The website should have search functionality to look up all existing venues that have been listed by other users | WORKING |
+|            034 |           020 | The website should have filter functionality to filter based on user-inputted criteria in pre-defined filter lists | WORKING |
+|            035 |           021 | Users should be able to click a button to mark a venue as a favorite | WORKING |
+|            036 |           021 | Users should be able to revisit and see a list of their favorited venues | WORKING |
