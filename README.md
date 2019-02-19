@@ -17,7 +17,7 @@ Each item should link to the actual product, be it a google spreadsheet, google 
 
 - [Product Backlog](https://github.com/Stelthshield/COP4331_Spring2019_Group4/blob/master/sprint1/product_backlog.md)
 - [Sprint Backlog](https://github.com/Stelthshield/COP4331_Spring2019_Group4/blob/master/sprint1/sprint_backlog.md)
-  - [Burndown Chart](https://imgur.com/a/f0glqp2)
+  - [Burndown Chart](https://i.imgur.com/7DH5S21.png)
 - [Requirements](https://github.com/Stelthshield/COP4331_Spring2019_Group4/blob/master/sprint1/requirements.md)
 - Design Documents
   - [System Architecture](https://github.com/Stelthshield/COP4331_Spring2019_Group4/blob/master/sprint1/architecture.md)
