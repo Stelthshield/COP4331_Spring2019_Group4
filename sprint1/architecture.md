@@ -4,7 +4,11 @@ Populate each section with information as it applies to your project. If a secti
 
 # Major Classes
   ![](https://i.imgur.com/mQal4pf.png)
+
 # Data Design
+
+- Models for users as well as venues will be stored in a sql database. 
+- Users can book or list multiple venues (user has many venues relationship)
 
 # Business Rules
 
@@ -14,9 +18,15 @@ Populate each section with information as it applies to your project. If a secti
 
 # User Interface Design
 
+- The front end of the application will use React.js to render pages
+- Aside from the login page, a main menu will be rendered at the top of all other pages
+
 # Resource Management
 
 # Security
+
+- Users will be authenticated using a sql database containing registered users
+- If time permits, OAuth or Passport can be used for more secure account authentication
 
 # Performance
 
