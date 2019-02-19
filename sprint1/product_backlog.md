@@ -18,5 +18,6 @@
 | 013 | As a user, I want to be able to delete my listings incase I made a mistake or change my mind. | 2 | 2 | When I click delete it should remove the lsiting from the database. | WORKING|
 | 014 | As a user, I want to be able to delete my own account incase I want to leave the community. | 2 | 2 | When I click delete account it should remove my profile from the database. | WORKING|
 | 015 | As a user, I want to write comments so I can review venues. | 2 | 2 | When I write a comment it should post it to the venue. | WORKING|
-| 016 | As a selling user, I want to edit my listing so that I can fix mistakes I amke. | 2 | 2 | When I click edit it should let me edit the name and price of the lsiting.| WORKING|
+| 016 | As a selling user, I want to edit my listing so that I can fix mistakes I amke. | 2 | 2 | When I click edit it should let me edit the name and price of the lsiting. | WORKING|
+| 017 | As a user, I want the website to load in 3 seconds so that I don't have to wait too long. | 2 | 2 | When the user opens the website it should load in 3 seconds. | WORKING|
 | ID | As a user, TEMPLATE | # | # | TEMPLATE | WORKING/DONE |
