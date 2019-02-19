@@ -27,3 +27,7 @@
 |            022 |           011 | The seller should be able to see these ratings on their listed venues to review | WORKING |
 |            023 |           012 | The sellers should be able to click on a rating system on the users to leave their rating | WORKING |
 |            024 |           012 | Each user should be able to review their own personal ratings on their accounts | WORKING |
+|            025 |           013 | Each user should be able to delete their listings with an edit button | WORKING |
+|            026 |           014 | Each user should be able to delete their account under account settings with a button | WORKING |
+|            027 |           015 | Each user should be able to write text commments on venue listings | WORKING |
+|            028 |           015 | Users should be able to see a list of other users' comments on a venue listing | WORKING |
