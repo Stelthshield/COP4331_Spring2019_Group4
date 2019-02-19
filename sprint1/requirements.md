@@ -16,5 +16,16 @@
 |            011 |           007 | When creating an account, the user should get an email for verification of their account | WORKING |
 |            012 |           007 | The user should get confirmation that their account was created | WORKING |
 |            013 |           007 | Once the user account is created, they should be able to login and access the website | WORKING |
+|            014 |           008 | Each user should have an option after clicking on another user in the user listing to blacklist the user | WORKING |
+|            015 |           008 | If an user is blacklisted, then they shouldn't be able to book venues from the listing user who blacklisted them | WORKING |
+|            016 |           009 | Users have to indicate their age when creating account. | WORKING |
+|            017 |           009 | Users must be over 18 years of age to successfully crate a working account | WORKING |
+|            018 |           009 | Administrators should be able to review all user account demographic details | WORKING |
+|            019 |           010 | During the account creation process, the user should be able to upload an image for their profile picture | WORKING |
+|            020 |           010 | Once the user account is created, the profile picture should display in other areas of the site | WORKING |
+|            021 |           011 | The user should be able to click on a rating system on the venue listing to leave their rating | WORKING |
+|            022 |           011 | The seller should be able to see these ratings on their listed venues to review | WORKING |
+|            023 |           012 | The sellers should be able to click on a rating system on the users to leave their rating | WORKING |
+|            024 |           012 | Each user should be able to review their own personal ratings on their accounts | WORKING |
 
 |            ID# |           ID# | TEMPLATE | WORKING/DONE/VERIFIED |
