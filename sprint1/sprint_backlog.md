@@ -2,7 +2,7 @@
 
 | ID | User Story | Effort | Priority | Validation Criteria | Owner |
 |----|------------|--------|----------|---------------------|-------|
-| 006 | As a user, I want to be able to log into a website to perform all actions, so I can visit the site multiple times and have an easy to use interface. | 8 | 1 | An example github site is viewable by all potential customers | Ryan Strickler |
+| 018 | As a user, I want to go to the website. | 8 | 1 | When the user goes to the home url, they should see our page | WORKING | Ryan Strickler |
 
 
 
