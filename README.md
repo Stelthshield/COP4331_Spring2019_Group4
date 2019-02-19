@@ -22,9 +22,7 @@ Each item should link to the actual product, be it a google spreadsheet, google 
 - Design Documents
   - [System Architecture](https://github.com/Stelthshield/COP4331_Spring2019_Group4/blob/master/sprint1/architecture.md)
   - [Class Diagrams](https://imgur.com/a/Z2U1CMO)
-  - Sequence Diagrams
-  - etc.
-- Source Code
+- [Source Code](https://github.com/Stelthshield/COP4331_Spring2019_Group4/tree/master/venue)
 - [Test Cases](https://github.com/Stelthshield/COP4331_Spring2019_Group4/blob/master/sprint1/tests.md)
 - Product Demonstration
 - Website Link
