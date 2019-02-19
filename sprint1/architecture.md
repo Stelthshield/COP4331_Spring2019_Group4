@@ -8,6 +8,9 @@ Populate each section with information as it applies to your project. If a secti
 
 # Business Rules
 
+- Users are over 18 years old
+- Reviewers can be under 18 years old
+
 # User Interface Design
 
 # Resource Management
