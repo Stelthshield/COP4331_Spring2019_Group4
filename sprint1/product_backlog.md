@@ -20,4 +20,5 @@
 | 015 | As a user, I want to write comments so I can review venues. | 2 | 2 | When I write a comment it should post it to the venue. | WORKING|
 | 016 | As a selling user, I want to edit my listing so that I can fix mistakes I amke. | 2 | 2 | When I click edit it should let me edit the name and price of the lsiting. | WORKING|
 | 017 | As a user, I want the website to load in 3 seconds so that I don't have to wait too long. | 2 | 2 | When the user opens the website it should load in 3 seconds. | WORKING|
+| 018 | As a user, I want to go to the website. | 8 | 1 | When the user goes to the home url, they should see our page | WORKING|
 | ID | As a user, TEMPLATE | # | # | TEMPLATE | WORKING/DONE |
