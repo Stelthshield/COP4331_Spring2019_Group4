@@ -5,7 +5,7 @@
 - Jingxiao Wang (Github Username: Stelthshield)
 - Ryan Strickler (Github Username: ryans93)
 - Ryan Burns (Github Username: rburns1220)
-- Vincent Phan (github Username: vphan404)
+- Vincent Phan (Github Username: vphan404)
 
 ## Vision Statement
 
