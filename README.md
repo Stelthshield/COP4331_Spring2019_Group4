@@ -25,3 +25,19 @@ Our product is targeted towards the general consumer audience ages 18+ globally 
 - [Product Demonstration](https://youtu.be/kp_h6RdZ3Os)
 - [Product Screenshot](https://i.imgur.com/rl9ojJv.png)
 - [Website Link](Heroku link)
+
+# Sprint 2
+
+- [Product Backlog]
+- [Sprint Backlog]
+  - [Burndown Chart](https://i.imgur.com/7DH5S21.png)
+- [Requirements]
+  - [System Architecture]
+  - [Class Diagrams](https://imgur.com/a/Z2U1CMO)
+  - [UI Diagram](https://raw.githubusercontent.com/Stelthshield/COP4331_Spring2019_Group4/master/sprint2/UI%20Diagram.jpg)
+- [Source Code](https://github.com/Stelthshield/COP4331_Spring2019_Group4/tree/master/venue)
+- [Test Cases]
+- [Product Demonstration](https://youtu.be/kp_h6RdZ3Os)
+- [Product Screenshot](https://i.imgur.com/rl9ojJv.png)
+- [Website Link](Heroku link)
+
