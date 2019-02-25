@@ -32,7 +32,7 @@ Our product is targeted towards the general consumer audience ages 18+ globally 
 - [Sprint Backlog]
   - [Burndown Chart](https://i.imgur.com/7DH5S21.png)
 - [Requirements]
-  - [System Architecture]
+  - [System Architecture](https://github.com/Stelthshield/COP4331_Spring2019_Group4/blob/master/sprint2/architecture.md)
   - [Class Diagrams](https://imgur.com/a/Z2U1CMO)
   - [UI Diagram](https://raw.githubusercontent.com/Stelthshield/COP4331_Spring2019_Group4/master/sprint2/UI%20Diagram.jpg)
 - [Source Code](https://github.com/Stelthshield/COP4331_Spring2019_Group4/tree/master/venue)
