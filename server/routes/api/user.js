@@ -12,10 +12,12 @@ router.get('/', (req, res) => {
     .then(users => res.json(users))
 });
 
+// @route POST api/user
+// @desc Create User
+// @access Public
 router.post('/', (req, res) => {
     const newUser = new User({
-        name: req.body.name,
-        publicID: req.body.publicID
+        name: req.body.name
     });
 
     newUser.save().then(user => res.json(user));
