@@ -8,7 +8,7 @@ Install:
                                    npm i -D nodemon  
                                
 Startup: 
-    In the server director run:    npm run server
+    In the server directory run:    npm run server
   
 Use: 
     You can make a GET request localhost:5000/api/user to get all users. 
