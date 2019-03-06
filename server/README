@@ -5,10 +5,10 @@ Install:
     Create the server folder on your own machine.
     Copy the files in.
     CD into the directory and run: npm i express body-parder mongoose concurrently
-                                 npm i -D nodemon  
+                                   npm i -D nodemon  
                                
 Startup: 
-    In the server director run: npm run server
+    In the server director run:    npm run server
   
 Use: 
     You can make a GET request localhost:5000/api/user to get all users. 
@@ -16,7 +16,6 @@ Use:
     I'd highly recommend taking 5 minutes to download Postman and "learn" it. 
     
 DB Admin Access: 
-
     See the pinned message on discord. 
   
 
