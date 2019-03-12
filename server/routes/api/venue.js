@@ -36,8 +36,8 @@ router.delete('/:id', (req, res) => {
         .catch(err => res.status(404).json({error: `${err}`}));
 });
 
-// @route PUT api/user
-// @desc Edit User
+// @route PUT api/venue
+// @desc Edit Venue
 // @access Public
 router.put('/:id', (req, res) => {
     Venue.findById(req.params.id)
