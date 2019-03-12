@@ -17,10 +17,37 @@ router.get('/', (req, res) => {
 // @access Public
 router.post('/', (req, res) => {
     const newUser = new User({
-        name: req.body.name
+        name: req.body.name,
+        account: req.body.account
     });
 
     newUser.save().then(user => res.json(user));
 })
+
+// @route DELETE api/user
+// @desc Delete User
+// @access Public
+router.delete('/:id', (req, res) => {
+    User.findById(req.params.id)
+        .then(user => user.remove().then(() => res.json({success: true})))
+        .catch(err => res.status(404).json({success:false}));
+});
+
+// @route PUT api/user
+// @desc Edit User
+// @access Public
+router.put('/:id', (req, res) => {
+    User.findById(req.params.id)
+        .then(user => {
+            if (req.body.name != null)
+                user.name = req.body.name;
+            if (req.body.billingInfo != null)
+                user.billingInfo = req.body.billingInfo;
+            user.save();
+            res.json(user);
+        })
+        .catch(err => res.status(404).json({error: 'Something went wrong'}))
+});
+
 
 module.exports = router;
