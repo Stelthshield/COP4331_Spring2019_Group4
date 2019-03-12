@@ -15,7 +15,10 @@ const VenueSchema = new Schema({
         type: String,
         required: true
     },
-    bookings: [Date],
+    bookings: {
+        type: Map,
+        required: true
+    },
     pricePerDay: Number,
     verification: {
         type: Boolean,
