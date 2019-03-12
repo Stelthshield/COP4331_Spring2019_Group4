@@ -3,6 +3,8 @@ const router = express.Router();
 
 // Venue Model
 const Venue = require('../../models/Venue.js');
+// User Model
+const User = require('../../models/User.js');
 
 // @route GET api/venue
 // @desc Get All Venues
@@ -21,6 +23,7 @@ router.post('/', (req, res) => {
         streetAddress: req.body.streetAddress,
         ownerID: req.body.ownerID,
         pricePerDay: req.body.price,
+        bookings: {},
         verification: false
     });
     newVenue.save().then(venue => res.json(venue))
@@ -46,11 +49,38 @@ router.put('/:id', (req, res) => {
                 venue.pricePerDay = req.body.pricePerDay;
             if (req.body.verification != null)
                 venue.verification = req.body.verification;
-            venue.save();
-            res.json(venue);
+            venue.save().then(() => res.json(venue))
         })
         .catch(err => res.status(404).json({error: `${err}`}))
 });
 
+// @route PUT api/user/book/:id
+// @desc Book a date
+// @access Public
+router.put('/book/:id', (req, res) => {
+
+    if (User.findById(req.params.userID) != null)
+    {
+        Venue.findById(req.params.id)
+            .then(venue => {
+                let bookings = new Map(venue.bookings);
+                if (!bookings.has(req.body.date))
+                {
+                    bookings.set(req.body.date, req.body.userID);
+                    venue.bookings = bookings;
+                    venue.save().then(() => res.json({"success":"true"}));
+                }
+                else{
+                    res.status(400).json({"success":"false"})
+                }
+            })
+            .catch(err => res.status(400).json({error: `${err}`}));
+    }
+    // User does not exist
+    else
+    {
+        res.status(400).json({'success' : 'false', 'message':'User does not exist'});
+    }    
+})
 
 module.exports = router;
