@@ -17,12 +17,12 @@ const VenueSchema = new Schema({
     },
     bookings: {
         type: Map,
-        required: true
+        //required: true
     },
     pricePerDay: Number,
     verification: {
         type: Boolean,
-        required: true
+        //required: true
     }
 })
 module.exports = Venue = mongoose.model('venue', VenueSchema);
