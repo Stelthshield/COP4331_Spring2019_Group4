@@ -28,7 +28,7 @@ router.get('/getByQuery', (req, res) => {
         }
     }
     Venue.find(query)
-    .then(venues => res.json({venues, query}))
+    .then(venues => res.json(venues))
     .catch(err => res.json(err));
 });
 
