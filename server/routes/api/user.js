@@ -49,5 +49,20 @@ router.put('/:id', (req, res) => {
         .catch(err => res.status(404).json({error: 'Something went wrong'}))
 });
 
-
+// @route GET api/user/getByQuery
+// @desc Get User specified by your query
+// @access Public
+router.get('/getByQuery', (req, res) => { 
+    let query = {};
+    let allowedParams = ['_id', 'name'];
+    for(param in req.body) 
+    {
+        if(allowedParams.includes(param)) {
+            query[param] = req.body[param];
+        }
+    }
+    Venue.find(query)
+    .then(users => res.json(users))
+    .catch(err => res.json(err));
+});
 module.exports = router;
