@@ -23,6 +23,6 @@ app.use('/api/user', user);
 //  Venue Route
 app.use('/api/venue', venue);
 
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 5000;
 
 app.listen(port, () => console.log(`Server started on port ${port}`));
