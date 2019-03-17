@@ -4,7 +4,7 @@ Description:
 Install:  
     Create the server folder on your own machine.
     Copy the files in.
-    CD into the directory and run: npm i express body-parder mongoose concurrently
+    CD into the directory and run: npm i express body-parser mongoose concurrently
                                    npm i -D nodemon  
                                
 Startup: 
