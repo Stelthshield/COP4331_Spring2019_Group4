@@ -82,7 +82,7 @@ router.put('/book/:id', (req, res) => {
         Venue.findById(req.params.id)
             .then(venue => {
                 let bookings = new Map(venue.bookings);
-                if (!bookings.has(req.body.date) && bookings.verification == true)
+                if (!bookings.has(req.body.date))
                 {
                     bookings.set(req.body.date, req.body.userID);
                     venue.bookings = bookings;
