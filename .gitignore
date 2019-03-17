@@ -102,3 +102,8 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+# Additional Files
+/server/node_modules
+/.vscode
+/server/.package-lock.json
