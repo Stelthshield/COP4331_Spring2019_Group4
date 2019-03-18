@@ -30,3 +30,19 @@ export const unbookVenue = (venueID, date) => {
             alert("Unbooking Failed: " + err);
         })
 }
+
+export const createVenue = (ownerID, zipCode, streetAddress, pricePerDay) => {
+    axios.post('http://localhost:5000/api/venue', {
+        "ownerID": ownerID,
+        "zipCode": zipCode,
+        "streetAddress": streetAddress,
+        "pricePerDay": pricePerDay
+    })
+    .then((res) => {
+        if (res.status == 200)
+                alert("Venue created")
+        })
+        .catch(err => {
+            alert("Creation Failed: " + err);
+    })
+}
