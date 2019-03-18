@@ -11,6 +11,7 @@ import Login from "./pages/Login";
 import NoMatch from "./pages/NoMatch";
 import Settings from "./pages/Settings";
 import Splash from "./pages/Splash";
+import ChoosePayment from "./pages/ChoosePayment";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
@@ -29,6 +30,7 @@ class App extends Component {
             <Route exact path="/my-bookings" component={MyBookings} />
             <Route exact path="/login" component={Login} />
             <Route exact path="/settings" component={Settings} />
+            <Route exact path="/choose-payment" component={ChoosePayment} />
             <Route component={NoMatch} />
           </Switch>
         </div>
