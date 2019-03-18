@@ -46,3 +46,14 @@ export const createVenue = (ownerID, zipCode, streetAddress, pricePerDay) => {
             alert("Creation Failed: " + err);
     })
 }
+
+export const deleteVenue = (venueID) => {
+    axios.delete(`http://localhost:5000/api/venue/${venueID}`)
+    .then((res) => {
+        if (res.status == 200)
+                alert("Venue deleted")
+        })
+    .catch(err => {
+        alert("Deletion Failed: " + err);
+    })
+}
