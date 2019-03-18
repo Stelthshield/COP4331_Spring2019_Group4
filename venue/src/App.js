@@ -4,6 +4,7 @@ import './App.css';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import BookVenue from "./pages/BookVenue";
 import MyBookings from "./pages/MyBookings";
+import MyVenues from "./pages/MyVenues";
 import CreateAccount from "./pages/CreateAccount";
 import Home from "./pages/Home";
 import ListVenue from "./pages/ListVenue";
@@ -11,7 +12,6 @@ import Login from "./pages/Login";
 import NoMatch from "./pages/NoMatch";
 import Settings from "./pages/Settings";
 import Splash from "./pages/Splash";
-import ChoosePayment from "./pages/ChoosePayment";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
@@ -28,9 +28,9 @@ class App extends Component {
             <Route exact path="/book-venue" component={BookVenue} />
             <Route exact path="/list-venue" component={ListVenue} />
             <Route exact path="/my-bookings" component={MyBookings} />
+            <Route exact path="/my-venues" component={MyVenues} />
             <Route exact path="/login" component={Login} />
             <Route exact path="/settings" component={Settings} />
-            <Route exact path="/choose-payment" component={ChoosePayment} />
             <Route component={NoMatch} />
           </Switch>
         </div>
