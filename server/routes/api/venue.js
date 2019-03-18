@@ -76,17 +76,16 @@ router.put('/:id', (req, res) => {
 // @desc Book a date
 // @access Public
 router.put('/book/:id', (req, res) => {
-
-    if (User.findById(req.params.userID) != null)
+    if (User.findById(req.body.userID) != null)
     {
         Venue.findById(req.params.id)
             .then(venue => {
                 let bookings = new Map(venue.bookings);
-                if (!bookings.has(req.body.date))
+                if (!(bookings.has(req.body.date)))
                 {
                     bookings.set(req.body.date, req.body.userID);
                     venue.bookings = bookings;
-                    venue.save().then(() => res.json({"success":"true"}));
+                    venue.save().then(() => res.json({"success":"true"})).catch(err => res.json(err));
                 }
                 else{
                     res.status(400).json({"success":"false"})
@@ -111,9 +110,14 @@ router.put('/unbook/:id', (req, res) => {
     Venue.findById(req.params.id)
     .then(venue => {
         let bookings = new Map(venue.bookings);
-        bookings.set(req.body.date, undefined);
-        venue.bookings = bookings;
-        venue.save().then(() => res.json({success:"true"}));
+        if (bookings.has(req.body.date)){
+            bookings.set(req.body.date, undefined);
+            venue.bookings = bookings;
+            venue.save().then(() => res.json({success:"true"}));
+        }
+        else {
+            res.status(400);
+        }
     }).catch(err => res.json(err));
     
 });
@@ -173,4 +177,6 @@ router.put('/unverify/:id', (req, res) => {
         venue.save().then(venue => res.json(venue));
     }).catch(err => res.json(err));;
 });
+
+
 module.exports = router;
