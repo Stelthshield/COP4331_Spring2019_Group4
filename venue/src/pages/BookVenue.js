@@ -37,6 +37,7 @@ class BookVenue extends Component {
         const { venues } = this.state;
         return (
             <Container>
+            <NavBar/>
                 <DatePicker
                     className="date-pckr"
                     onChange={this.onChange}
