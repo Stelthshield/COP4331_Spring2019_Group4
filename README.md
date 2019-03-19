@@ -30,9 +30,9 @@ Our product is targeted towards the general consumer audience ages 18+ globally 
 
 - [Product Backlog](https://github.com/Stelthshield/COP4331_Spring2019_Group4/blob/master/sprint2/product_backlog.md)
 - [Sprint Backlog](https://github.com/Stelthshield/COP4331_Spring2019_Group4/blob/master/sprint2/sprint_backlog.md)
-  - [Burndown Chart](https://github.com/Stelthshield/COP4331_Spring2019_Group4/blob/master/sprint2/Burndown%20Chart%20Sprint%202.png)
+  - [Burndown Chart](https://github.com/Stelthshield/COP4331_Spring2019_Group4/blob/master/sprint2/diagrams/Burndown%20Chart%20Sprint%202.png)
 - [Requirements](https://github.com/Stelthshield/COP4331_Spring2019_Group4/blob/master/sprint2/requirements.md)
-  - [System Architecture](https://github.com/Stelthshield/COP4331_Spring2019_Group4/blob/master/sprint2/architecture.md)
+  - [System Architecture](https://github.com/Stelthshield/COP4331_Spring2019_Group4/blob/master/sprint2/diagrams/COP4331C%20-%20Group%204-Software%20Architecture.png)
   - [Class Diagrams](https://imgur.com/a/Z2U1CMO)
   - [UI Diagram](https://raw.githubusercontent.com/Stelthshield/COP4331_Spring2019_Group4/master/sprint2/UI%20Diagram.png)
 - [Source Code](https://github.com/Stelthshield/COP4331_Spring2019_Group4/tree/master/venue)
