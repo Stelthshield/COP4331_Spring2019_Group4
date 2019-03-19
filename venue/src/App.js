@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import BookVenue from "./pages/BookVenue";
 import MyBookings from "./pages/MyBookings";
 import MyVenues from "./pages/MyVenues";
+import MyVenueBookingInfo from "./pages/MyVenueBookingInfo";
 import CreateAccount from "./pages/CreateAccount";
 import Home from "./pages/Home";
 import ListVenue from "./pages/ListVenue";
@@ -28,6 +29,7 @@ class App extends Component {
             <Route exact path="/book-venue" component={BookVenue} />
             <Route exact path="/list-venue" component={ListVenue} />
             <Route exact path="/my-bookings" component={MyBookings} />
+            <Route exact path="/my-venue-booking-info" component={MyVenueBookingInfo} />
             <Route exact path="/my-venues" component={MyVenues} />
             <Route exact path="/login" component={Login} />
             <Route exact path="/settings" component={Settings} />
