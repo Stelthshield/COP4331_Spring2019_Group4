@@ -12,7 +12,7 @@
 | 007 | As an unauthorized user, I want to be able to create a new account so I can buy and sell venues. | 3 | 1 | When I make an account it should allow me to gain access to website functions. | ASSIGNED |
 | 008 | As a selling user, I want to be able to blacklist users from my venue, so I don't need to do business with them again. | 9 | 2 | When I add users to my blacklist they should not be able to interact with me | UNASSIGNED |
 | 009 | As an admin, I want to make sure my users are over 18, so that we follow leasing laws. | 2 | 1 | When they make an account they must put in their birth date and it should verify they are over 18. | UNASSIGNED |
-| 010 | As a user, I want to have a profile picture so that I can be unique. | 2 | 3 | When I upload a picture it should go on my profile.  | WAITING |
+| 010 | As a user, I want to have a profile picture so that I can be unique. | 2 | 3 | When I upload a picture it should go on my profile.  | UNASSIGNED |
 | 011 | As a buying user, I want to be able to rate the venues I have used so that other people will know what are the best venues | 6 | 3 | When I give a venue a star rating it should display on their page.  | UNASSIGNED |
 | 012 | As a selling user, I want to be able to rate users that have rented my venues. | 6 | 3 | When I give a user a star rating it should display on their profile. | UNASSIGNED |
 | 013 | As a user, I want to be able to delete my listings incase I made a mistake or change my mind. | 4 | 1 | When I click delete it should remove the lsiting from the database. | COMPLETE |
