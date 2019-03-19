@@ -8,7 +8,7 @@
 | 003 | As a buying user, I want to be able to see my booked venues, so that I can reference in case I forgot! | 5 | 1 | When I click on my list of venues I should be able to see all of them. | COMPLETE |
 | 004 | As a buying user, I want to be able to pay for my booked venues, so that I can transfer my payment to whom listed the venue. | 8 | 1 | When I book a venue I should be able to put in my credit card and pay for it. | UNASSIGNED |
 | 005 | As a selling user, I want to be able to receive payment for my listed venues, so that I can make money. | 10 | 1 | When I lease my venue I should receive payment. | UNASSIGNED |
-| 006 | As a user, I want to be able to access the website so I can look at what the company has to offer. | 3 | 1 | When I type in the website name into the address bar it should appear. | UNASSIGNED |
+| 006 | As a user, I want to be able to access the website so I can look at what the company has to offer. | 3 | 1 | When I type in the website name into the address bar it should appear. | COMPLETE |
 | 007 | As an unauthorized user, I want to be able to create a new account so I can buy and sell venues. | 3 | 1 | When I make an account it should allow me to gain access to website functions. | ASSIGNED |
 | 008 | As a selling user, I want to be able to blacklist users from my venue, so I don't need to do business with them again. | 9 | 2 | When I add users to my blacklist they should not be able to interact with me | UNASSIGNED |
 | 009 | As an admin, I want to make sure my users are over 18, so that we follow leasing laws. | 2 | 1 | When they make an account they must put in their birth date and it should verify they are over 18. | UNASSIGNED |

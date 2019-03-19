@@ -21,7 +21,7 @@ class CreateAccount extends Component {
         return (
             <div className="container">
                 <NavBar />
-                <h1>Login</h1>
+                <h1>Create Account</h1>
                 <div>
 
                     <form>
