@@ -7,6 +7,8 @@ const User = require('../../models/User.js');
 // @route GET api/user
 // @desc Get All Users
 // @access Public
+// Req Params: 
+// Optional Params:
 router.get('/', (req, res) => {
     User.find()
     .then(users => res.json(users))
@@ -15,6 +17,8 @@ router.get('/', (req, res) => {
 // @route POST api/user
 // @desc Create User
 // @access Public
+// Req Params: name
+// Optional Params: account
 router.post('/', (req, res) => {
     const newUser = new User({
         name: req.body.name,
@@ -27,6 +31,8 @@ router.post('/', (req, res) => {
 // @route DELETE api/user
 // @desc Delete User
 // @access Public
+// Req Params: id
+// Optional Params:
 router.delete('/:id', (req, res) => {
     User.findById(req.params.id)
         .then(user => user.remove().then(() => res.json({success: true})))
@@ -36,6 +42,8 @@ router.delete('/:id', (req, res) => {
 // @route PUT api/user
 // @desc Edit User
 // @access Public
+// Req Params: name
+// Optional Params: billingInfo
 router.put('/:id', (req, res) => {
     User.findById(req.params.id)
         .then(user => {
@@ -52,6 +60,8 @@ router.put('/:id', (req, res) => {
 // @route GET api/user/getByQuery
 // @desc Get User specified by your query
 // @access Public
+// Req Params: 
+// Optional Params: _id, name
 router.get('/getByQuery', (req, res) => { 
     let query = {};
     let allowedParams = ['_id', 'name'];
