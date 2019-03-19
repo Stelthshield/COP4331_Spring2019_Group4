@@ -57,5 +57,3 @@ export const deleteVenue = (venueID) => {
         alert("Deletion Failed: " + err);
     })
 }
-
-//Testing pull request edit edit
