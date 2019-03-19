@@ -18,6 +18,19 @@ export const bookVenue = (venueID, date, userID) => {
         })
 }
 
+export const bookVenuePayment = (venueID, date, userID, cardType, cardNumber, expDate, CVV, cardHolderName) => {
+    axios.put(`http://localhost:5000/api/venue/book/${venueID}`, { "date": date, "userID": userID, "cardType": cardType,
+                                                                    "cardNumber": cardNumber, "expDate": expDate,
+                                                                    "CVV": CVV, "cardHolderName": cardHolderName})
+        .then((res) => {
+            if (res.status == 200)
+                alert("Booking successful")
+        })
+        .catch(err => {
+            alert("Booking Failed: " + err);
+        })
+}
+
 export const unbookVenue = (venueID, date) => {
     axios.put(`http://localhost:5000/api/venue/unbook/${venueID}`, {"date": date})
         .then((res) => {
