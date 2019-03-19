@@ -14,17 +14,17 @@
 # Major Classes
   ![](https://i.imgur.com/mQal4pf.png)
  - User
-  - This class holds the information for each user including the venues they own and their accound id.
-  - User Stories: 002, 004, 005, 007, 008, 009, 010, 012, 014, 018
+   - This class holds the information for each user including the venues they own and their accound id.
+   - User Stories: 002, 004, 005, 007, 008, 009, 010, 012, 014, 018
  - Venue
-  - This is the class that is used most often by all the functions. It holds the information for the venue which allows it to be used by users and in the orders class.
-  - User Stories: 000, 001, 003, 011, 013, 016, 019
+    - This is the class that is used most often by all the functions. It holds the information for the venue which allows it to be used by users and in the orders class.
+    - User Stories: 000, 001, 003, 011, 013, 016, 019
  - Order
-  - This class deals with payemnt and transaction processing for booking a venue between users.
-  - User Stories: 004, 005
+    - This class deals with payemnt and transaction processing for booking a venue between users.
+    - User Stories: 004, 005
  - Database
-  - This is the class that uses Axios calls to hit backend routes which makes requests to MongoDB using Mongoose.
-  - User Stories: 000, 001, 002, 003, 004, 005, 006, 007, 008, 010, 011, 012, 013, 014, 015, 016, 018, 019, 021
+    - This is the class that uses Axios calls to hit backend routes which makes requests to MongoDB using Mongoose.
+    - User Stories: 000, 001, 002, 003, 004, 005, 006, 007, 008, 010, 011, 012, 013, 014, 015, 016, 018, 019, 021
 # Data Design
 
 - Models for users as well as venues will be stored in a MongoDB database. 
