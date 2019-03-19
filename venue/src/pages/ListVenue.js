@@ -1,28 +1,75 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import NavBar from "../components/MainNav";
+import { Container, ListGroup, ListGroupItem, Button, Form, FormGroup, Input, Label } from 'reactstrap';
+import { CSSTransition, TransitionGroup } from 'react-transition-group';
+import { createVenue } from '../backendInterface/Venue'
 
-class NoMatch extends Component {
+
+class ListVenue extends Component {
+
 
     state = {
-
+        zipCode: "",
+        streetAddress: "",
+        pricePerDay: "",
+        userID: "5c86f112e368c11a6c40a677"
     }
 
-    handleInputChange = event => {
-        const { name, value } = event.target;
-        this.setState({
-            [name]: value
-        });
-    };
 
     render() {
         return (
-            <div className="container">
+            <Container>
                 <NavBar />
-
-            </div>
+                <Form>
+                    <FormGroup>
+                        <Label>Zip Code</Label>
+                        <Input
+                            type="text"
+                            value={this.state.zipCode}
+                            placeholder="Required"
+                            onChange={(event) => {
+                                this.setState({zipCode: event.target.value})
+                                }
+                            }
+                        ></Input>
+                    </FormGroup>
+                    <FormGroup>
+                        <Label>Street Address</Label>
+                        <Input
+                            type="text"
+                            value={this.state.streetAddress}
+                            placeholder="Required"
+                            onChange={(event) => {
+                                this.setState({streetAddress: event.target.value})
+                                }
+                            }
+                        ></Input>
+                    </FormGroup>
+                    <FormGroup>
+                        <Label>$/Day</Label>
+                        <Input
+                            type="text"
+                            value={this.state.pricePerDay}
+                            onChange={(event) => {
+                                this.setState({pricePerDay: event.target.value})
+                                }
+                            }
+                        ></Input>
+                    </FormGroup>
+                    <Button
+                        type="submit"
+                        onClick={() => {
+                            createVenue(this.state.userID, this.state.zipCode, this.state.streetAddress, this.state.pricePerDay);
+                        }}
+                    >
+                    List Venue
+                    </Button>
+                </Form>
+                
+            </Container>
         );
     }
 }
 
-export default NoMatch;
+export default ListVenue;

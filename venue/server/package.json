@@ -1,0 +1,28 @@
+{
+  "name": "venue",
+  "version": "1.0.0",
+  "description": "Venue app",
+  "main": "server.js",
+  "scripts": {
+    "client-install": "npm install --prefix ../venue",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix ../venue",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "keywords": [
+    "POOP",
+    "Group"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "concurrently": "^4.1.0",
+    "express": "^4.16.4",
+    "mongoose": "^5.4.19"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.10"
+  }
+}

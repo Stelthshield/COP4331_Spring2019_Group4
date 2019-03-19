@@ -1,29 +1,28 @@
-const express = require("express");
-const request = require("request");
-// mysql dependancy here
-var path = require("path");
-var bodyParser = require("body-parser");
+const express = require('express');
+const mongoose = require('mongoose');
+const bodyParser = require('body-parser');
 
-const PORT = process.env.PORT || 3001;
+const user = require('./routes/api/user');
+const venue = require('./routes/api/venue');
 
 const app = express();
+
+// Bodyparser Middleware
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use(bodyParser.text());
-app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 
-app.use(express.static(path.join(__dirname, 'client', 'build')));
+// DB Config
+const db = require('./config/keys').mongoURI;
 
-//db conncetion here
+// Connect to Mongo
+mongoose.connect(db, { useNewUrlParser: true })
+    .then(() => console.log('MongoDB Connected...'))
+    .catch(err => console.log(err));
 
-//api routes here
+// User Routes
+app.use('/api/user', user);
+//  Venue Route
+app.use('/api/venue', venue);
 
+const port = process.env.PORT || 5000;
 
-
-app.get('/', function (req, res) {
-    res.sendFile(path.join(__dirname, 'client', 'build', 'index.html'));
-  });
-
-app.listen(PORT, function () {
-    console.log("App running on port " + PORT);
-});
+app.listen(port, () => console.log(`Server started on port ${port}`));

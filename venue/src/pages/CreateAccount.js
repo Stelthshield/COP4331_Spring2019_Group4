@@ -2,10 +2,12 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import NavBar from "../components/LoginNav";
 
-class NoMatch extends Component {
+class CreateAccount extends Component {
 
     state = {
-
+        name: "",
+        email: "",
+        password: ""
     }
 
     handleInputChange = event => {
@@ -19,10 +21,52 @@ class NoMatch extends Component {
         return (
             <div className="container">
                 <NavBar />
-                <h1>here</h1>
+                <h1>Login</h1>
+                <div>
+
+                    <form>
+                    <div className="row">
+                            <label>Name</label>
+                        </div>
+                        <input
+                            value={this.state.name}
+                            onChange={this.handleInputChange}
+                            name="name"
+                        />
+                        <div className="row">
+                            <label>Email</label>
+                        </div>
+                        <input
+                            value={this.state.email}
+                            onChange={this.handleInputChange}
+                            name="email"
+                        />
+                        <div className="row">
+                            <label>Password</label>
+                        </div>
+                        <input
+                            value={this.state.password}
+                            onChange={this.handleInputChange}
+                            name="password"
+                        />
+                        <div className="row">
+                            <div id="btnContainer">
+                                <button
+                                    className="btn btn-success"
+                                    id="button-login"
+                                    disabled={!(this.state.email) || !(this.state.password)}
+                                    onClick={this.handleFormSubmit}
+                                >
+                                    Submit
+                            </button>
+
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </div>
         );
     }
 }
 
-export default NoMatch;
+export default CreateAccount;

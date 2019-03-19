@@ -9,9 +9,12 @@ const User = require('../../models/User.js');
 // @access Public
 // Req Params: 
 // Optional Params:
-router.get('/', (req, res) => {
-    User.find()
-    .then(users => res.json(users))
+router.get('/api/user/auth-user', (req, res) => {
+    User.find({
+        name: req.body.email,
+        password: req.body.password
+    })
+        .then(users => res.json(users))
 });
 
 // @route POST api/user
@@ -35,8 +38,8 @@ router.post('/', (req, res) => {
 // Optional Params:
 router.delete('/:id', (req, res) => {
     User.findById(req.params.id)
-        .then(user => user.remove().then(() => res.json({success: true})))
-        .catch(err => res.status(404).json({success:false}));
+        .then(user => user.remove().then(() => res.json({ success: true })))
+        .catch(err => res.status(404).json({ success: false }));
 });
 
 // @route PUT api/user
@@ -54,7 +57,7 @@ router.put('/:id', (req, res) => {
             user.save();
             res.json(user);
         })
-        .catch(err => res.status(404).json({error: 'Something went wrong'}))
+        .catch(err => res.status(404).json({ error: 'Something went wrong' }))
 });
 
 // @route GET api/user/getByQuery
@@ -62,17 +65,16 @@ router.put('/:id', (req, res) => {
 // @access Public
 // Req Params: 
 // Optional Params: _id, name
-router.get('/getByQuery', (req, res) => { 
+router.get('/getByQuery', (req, res) => {
     let query = {};
     let allowedParams = ['_id', 'name'];
-    for(param in req.body) 
-    {
-        if(allowedParams.includes(param)) {
+    for (param in req.body) {
+        if (allowedParams.includes(param)) {
             query[param] = req.body[param];
         }
     }
     User.find(query)
-    .then(users => res.json(users))
-    .catch(err => res.json(err));
+        .then(users => res.json(users))
+        .catch(err => res.json(err));
 });
 module.exports = router;

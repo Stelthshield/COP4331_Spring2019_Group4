@@ -1,0 +1,23 @@
+Description:  
+    The server side is intended to run concurrenly from the client side.   
+  
+Install:  
+    Create the server folder on your own machine.
+    Copy the files in.
+    CD into the directory and run: npm i express body-parser mongoose concurrently
+                                   npm i -D nodemon  
+                               
+Startup: 
+    In the server directory run:    npm run server
+  
+Use: 
+    You can make a GET request localhost:5000/api/user to get all users. 
+    Make a POST request to the same URL to create a user. Note the content type is application/json
+    I'd highly recommend taking 5 minutes to download Postman and "learn" it. 
+    
+DB Admin Access: 
+    See the pinned message on discord. 
+  
+
+  
+ 

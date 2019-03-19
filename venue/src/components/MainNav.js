@@ -11,6 +11,9 @@ class MainNav extends Component {
                         <li className="navLink" ><Link to="/home" id=""><a>Home</a></Link></li>
                         <li className="navLink"><Link to="/list-venue"><a>List Venue</a></Link></li>
                         <li className="navLink"><Link to="/book-venue"><a>Book Venue</a></Link></li>
+                        <li className="navLink"><Link to="/my-venues"><a>My Venues</a></Link></li>
+                        <li className="navLink"><Link to="/my-bookings"><a>My Bookings</a></Link></li>
+                        <li className="navLink"><Link to="/my-venue-booking-info"><a>My Venue Booking Info</a></Link></li>
                     </ul>
                     <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul className="nav navbar-nav navbar-right">

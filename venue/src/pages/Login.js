@@ -1,12 +1,17 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import NavBar from "../components/LoginNav";
+import API from "../utils/API";
+import { Redirect } from 'react-router';
+import { isNullOrUndefined } from "util";
 
 class NoMatch extends Component {
 
     state = {
         email: "",
-        password: ""
+        password: "",
+        redirectHome: false,
+        failedLogin: false
     }
 
     handleInputChange = event => {
@@ -16,7 +21,31 @@ class NoMatch extends Component {
         });
     };
 
+    handleFormSubmit = event => {
+        event.preventDefault();
+        let user = {
+            email: this.state.email,
+            password: this.state.password,
+        };
+        console.log(user);
+        API.authUser(user).then(res => {
+            console.log(res);
+            if (res == isNullOrUndefined) {
+                this.setState({ failedLogin: true });
+                alert("Login failed.");
+            }
+            else {
+                this.setState({ redirectHome: true });
+            }
+        })
+    };
+
     render() {
+        let redirectHome = this.state.redirectHome;
+        if (redirectHome) {
+            console.log("about to redirect");
+            return <Redirect to='/home' />;
+        }
         return (
             <div className="container">
                 <NavBar />
