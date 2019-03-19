@@ -16,7 +16,7 @@
 
 # User Interface Design
 
-![](https://raw.githubusercontent.com/Stelthshield/COP4331_Spring2019_Group4/master/sprint2/UI%20Diagram.jpg)
+![](https://raw.githubusercontent.com/Stelthshield/COP4331_Spring2019_Group4/master/sprint2/UI%20Diagram.png)
 - The front end of the application will use React.js to render pages
 - Aside from the login page, a main menu will be rendered at the top of all other pages
 
