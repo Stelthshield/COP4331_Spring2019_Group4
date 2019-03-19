@@ -36,7 +36,7 @@ Our product is targeted towards the general consumer audience ages 18+ globally 
   - [System Architecture](https://github.com/Stelthshield/COP4331_Spring2019_Group4/blob/master/sprint2/diagrams/COP4331C%20-%20Group%204-Software%20Architecture.png)
   - [Class Diagrams](https://imgur.com/a/Z2U1CMO)
   - [UI Diagram](https://raw.githubusercontent.com/Stelthshield/COP4331_Spring2019_Group4/master/sprint2/UI%20Diagram.png)
-- [Source Code]
+- Source Code
   - [Frontend](https://github.com/Stelthshield/COP4331_Spring2019_Group4/tree/master/venue)
   - [Backend](https://github.com/Stelthshield/COP4331_Spring2019_Group4/tree/master/server)
 - [Test Cases](https://github.com/Stelthshield/COP4331_Spring2019_Group4/blob/master/sprint2/tests.md)
