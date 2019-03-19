@@ -9,6 +9,8 @@ const User = require('../../models/User.js');
 // @route GET api/venue
 // @desc Get All Venues
 // @access Public
+// Req Params: 
+// Optional Params:
 router.get('/', (req, res) => {
     Venue.find()
     .then(venues => res.json(venues))
@@ -18,6 +20,8 @@ router.get('/', (req, res) => {
 // @route GET api/venue/getByQuery
 // @desc Get Venues specified by your query
 // @access Public
+// Req Params: 
+// Optional Params: _id, ownerID, zipCode, verification
 router.get('/getByQuery', (req, res) => { 
     let query = {};
     let allowedParams = ['_id', 'ownerID', 'zipCode', 'verification'];
@@ -35,6 +39,8 @@ router.get('/getByQuery', (req, res) => {
 // @route POST api/venue
 // @desc Create venue
 // @access Public
+// Req Params: zipCode, StreetAddress, ownerID
+// Optional Params: price
 router.post('/', (req, res) => {
     let newVenue = new Venue({
         zipCode: req.body.zipCode,
@@ -51,6 +57,8 @@ router.post('/', (req, res) => {
 // @route DELETE api/venue
 // @desc Delete venue
 // @access Public
+// Req Params: id
+// Optional Params:
 router.delete('/:id', (req, res) => {
     Venue.findById(req.params.id)
         .then(venue => venue.remove().then(() => res.json({success: true})))
@@ -60,6 +68,8 @@ router.delete('/:id', (req, res) => {
 // @route PUT api/venue
 // @desc Edit Venue
 // @access Public
+// Req Params: id
+// Optional Params: pricePerDay, verification
 router.put('/:id', (req, res) => {
     Venue.findById(req.params.id)
         .then(venue => {
@@ -75,6 +85,8 @@ router.put('/:id', (req, res) => {
 // @route PUT api/user/book/:id
 // @desc Book a date
 // @access Public
+// Req Params: id, userID, date
+// Optional Params:
 router.put('/book/:id', (req, res) => {
     if (User.findById(req.body.userID) != null)
     {
@@ -104,6 +116,8 @@ router.put('/book/:id', (req, res) => {
 // @route PUT api/venue/unbook/:id
 // @desc Unbook a date
 // @access Public
+// Req Params: id, date
+// Optional Params:
 router.put('/unbook/:id', (req, res) => {
     //Venue.update({"_id":req.body.id}, )
     
@@ -125,6 +139,8 @@ router.put('/unbook/:id', (req, res) => {
 // @route GET api/venue/checkAvailibility/:id
 // @desc Check if date is open
 // @access Public
+// Req Params: id, date
+// Optional Params:
 router.get('/checkAvailibility/:id', (req, res) => {
     Venue.findById(req.params.id)
     .then(venue => {
@@ -139,6 +155,8 @@ router.get('/checkAvailibility/:id', (req, res) => {
 // @route GET api/venue/getOwnerID/:id
 // @desc Get venue's owner id
 // @access Public
+// Req Params: id, ownerID
+// Optional Params:
 router.get('/getOwnerID/:id', (req, res) => {
     Venue.findById(req.params.id)
     .then(venue => {
@@ -149,6 +167,8 @@ router.get('/getOwnerID/:id', (req, res) => {
 // @route GET api/venue/checkVerification/:id
 // @desc Get venue's owner id
 // @access Public
+// Req Params: id
+// Optional Params:
 router.get('/checkVerification/:id', (req, res) => {
     Venue.findById(req.params.id)
     .then(venue => {
@@ -159,6 +179,8 @@ router.get('/checkVerification/:id', (req, res) => {
 // @route PUT api/venue/verify/:id
 // @desc Sets the venue as verified
 // @access Public
+// Req Params: id
+// Optional Params:
 router.put('/verify/:id', (req, res) => {
     Venue.findById(req.params.id)
     .then(venue => {
@@ -170,6 +192,8 @@ router.put('/verify/:id', (req, res) => {
 // @route PUT api/venue/unverify/:id
 // @desc Sets the venue as unverified
 // @access Public
+// Req Params: id
+// Optional Params:
 router.put('/unverify/:id', (req, res) => {
     Venue.findById(req.params.id)
     .then(venue => {
