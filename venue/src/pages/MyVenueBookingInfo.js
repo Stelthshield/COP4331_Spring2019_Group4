@@ -6,6 +6,7 @@ import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import { unbookVenue } from '../backendInterface/Venue'
 import axios from "axios";
 
+// Returns obj key value pairs as array object
 function* entries(obj) {
     for (let key in obj)
         yield [key, obj[key]];
@@ -20,13 +21,16 @@ class MyVenueBookingInfo extends Component {
 
     componentDidMount() {
         const userID = "5c86f112e368c11a6c40a677";
+        // Get all venues this user owns
         axios.get('http://localhost:5000/api/venue/getByQuery', { "ownerID": userID })
             .then((res) => {
                 this.setState({ venues: res.data });
                 let arr = [];
+                // For each venue the user owns and for all bookings that venue has
+                // add the user and the booking infor to the arr so we can print it later
                 for (let venue of this.state.venues) {
                     let bookings = new Map(entries(venue.bookings));
-                    console.log(bookings);
+                    console.log(bookings);   
                     for (let date of bookings.keys()) {
                         axios.get(`http://localhost:5000/api/user/getByQuery`, { "_id": bookings.get(date) })
                             .then((res2) => {
