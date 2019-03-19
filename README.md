@@ -30,7 +30,7 @@ Our product is targeted towards the general consumer audience ages 18+ globally 
 
 - [Product Backlog](https://github.com/Stelthshield/COP4331_Spring2019_Group4/blob/master/sprint2/product_backlog.md)
 - [Sprint Backlog](https://github.com/Stelthshield/COP4331_Spring2019_Group4/blob/master/sprint2/sprint_backlog.md)
-  - [Burndown Chart](https://i.imgur.com/7DH5S21.png)
+  - [Burndown Chart](https://github.com/Stelthshield/COP4331_Spring2019_Group4/blob/master/sprint2/Burndown%20Chart%20Sprint%202.png)
 - [Requirements](https://github.com/Stelthshield/COP4331_Spring2019_Group4/blob/master/sprint2/requirements.md)
   - [System Architecture](https://github.com/Stelthshield/COP4331_Spring2019_Group4/blob/master/sprint2/architecture.md)
   - [Class Diagrams](https://imgur.com/a/Z2U1CMO)
@@ -39,5 +39,5 @@ Our product is targeted towards the general consumer audience ages 18+ globally 
 - [Test Cases](https://github.com/Stelthshield/COP4331_Spring2019_Group4/blob/master/sprint2/tests.md)
 - [Product Demonstration](https://youtu.be/kp_h6RdZ3Os)
 - [Product Screenshot](https://i.imgur.com/rl9ojJv.png)
-- [Website Link](Heroku link)
-https://frozen-waters-78208.herokuapp.com/
+- [Website Link](https://frozen-waters-78208.herokuapp.com/)
+
