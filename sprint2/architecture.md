@@ -44,6 +44,15 @@
 - The front end of the application will use React.js to render pages
 - Aside from the login page, a main menu will be rendered at the top of all other pages
 
+The workflow for the user interface begins on the splash page, where you can either login or create an account. After logging in, you are taken to the main page that has links to separate pages within our app satisfying different functionality - listing a venue, booking a venue, viewing your listed venues, viewing your booked listings, and viewing who has booked your listed venues.
+
+- User story 007 - Creating an account is satisfied by the create account page in our app
+- User story 001 - Listing a venue is satisfied by the list venue page and functionality
+- User story 000 - Booking a venue is satisfied by the book venue page and functionality
+- User story 003 - Viewing booked venues is satisfied by the my bookings page and functionality
+- User story 013 - Deleting listings is satisfied by the My Venues page, where you can delete your listed venues
+- User story 002 - Viewing those who booked your venues is satisfied by the My Venue Booking Info page and functionality
+
 # Resource Management
 
 # Security
