@@ -61,7 +61,7 @@ router.get('/getByQuery', (req, res) => {
             query[param] = req.body[param];
         }
     }
-    Venue.find(query)
+    User.find(query)
     .then(users => res.json(users))
     .catch(err => res.json(err));
 });
