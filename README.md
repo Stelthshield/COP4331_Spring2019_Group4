@@ -40,7 +40,7 @@ Our product is targeted towards the general consumer audience ages 18+ globally 
   - [Frontend](https://github.com/Stelthshield/COP4331_Spring2019_Group4/tree/master/venue)
   - [Backend](https://github.com/Stelthshield/COP4331_Spring2019_Group4/tree/master/server)
 - [Test Cases](https://github.com/Stelthshield/COP4331_Spring2019_Group4/blob/master/sprint2/tests.md)
-- [Product Demonstration](https://youtu.be/kp_h6RdZ3Os)
+- [Product Demonstration](https://youtu.be/jxy54gpgdu0)
 - [Product Screenshot](https://i.imgur.com/rl9ojJv.png)
 - [Website Link](https://frozen-waters-78208.herokuapp.com/)
 
