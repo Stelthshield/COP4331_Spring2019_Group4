@@ -40,6 +40,6 @@ Our product is targeted towards the general consumer audience ages 18+ globally 
   - [Frontend](https://github.com/Stelthshield/COP4331_Spring2019_Group4/tree/master/venue)
   - [Backend](https://github.com/Stelthshield/COP4331_Spring2019_Group4/tree/master/server)
 - [Test Cases](https://github.com/Stelthshield/COP4331_Spring2019_Group4/blob/master/sprint2/tests.md)
-- [Product Demonstration](https://youtu.be/jxy54gpgdu0)
+- [Product Demonstration (YouTube Video)](https://youtu.be/jxy54gpgdu0)
 - [Website Link](Heroku link)
 https://pure-depths-38072.herokuapp.com/
