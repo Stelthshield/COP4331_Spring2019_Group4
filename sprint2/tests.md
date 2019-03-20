@@ -40,3 +40,9 @@
 | 025 | 002 | Navigate to http://localhost:3000/home. | Confirm the screen shows a navigation bar with Home, List Venue, Book Venue, My Venues, My Bookings, and My Venue Booking Info | MANUAL | PASS |
 | 026 | 002 | Click the My Venue Booking Info button| Confirm the screen updates with booking listings and you see 3 1 2019 --- TestStreet TestZip --- Mike | MANUAL | PASS |
 
+| ID | User Story ID | Description | Validation | Implementation | Status | 
+|----|---------------|-------------|------------|----------------|--------|
+| 027 | 013 | Navigate to http://localhost:3000/home. | Confirm the screen shows a navigation bar with Home, List Venue, Book Venue, My Venues, My Bookings, and My Venue Booking Info | MANUAL | PASS |
+| 028 | 013 | Click the My Venues button| Confirm the screen updates with your venue listings and you see TestStreet TestZip | MANUAL | PASS |
+| 029 | 013 | Click the delete button next to TestStreet TestZip | Confirm you get a pop-up confirmation that the venue deleted | MANUAL | PASS |
+| 030 | 013 | Refresh the page | Confirm that the TestStreet TestZip venue listing is no longer there | MANUAL | PASS |
