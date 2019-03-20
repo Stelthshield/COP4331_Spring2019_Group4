@@ -33,3 +33,10 @@
 | ID | User Story ID | Description | Validation | Implementation | Status | 
 |----|---------------|-------------|------------|----------------|--------|
 | 023 | 003 | Navigate to http://localhost:3000/home. | Confirm the screen shows a navigation bar with Home, List Venue, Book Venue, My Venues, My Bookings, and My Venue Booking Info | MANUAL | PASS |
+| 024 | 003 | Click the My Bookings Venues button| Confirm the screen updates with booking listings and you see 3 1 2019 --- TestStreet TestZip | MANUAL | PASS |
+
+| ID | User Story ID | Description | Validation | Implementation | Status | 
+|----|---------------|-------------|------------|----------------|--------|
+| 025 | 002 | Navigate to http://localhost:3000/home. | Confirm the screen shows a navigation bar with Home, List Venue, Book Venue, My Venues, My Bookings, and My Venue Booking Info | MANUAL | PASS |
+| 026 | 002 | Click the My Venue Booking Info button| Confirm the screen updates with booking listings and you see 3 1 2019 --- TestStreet TestZip --- Mike | MANUAL | PASS |
+
