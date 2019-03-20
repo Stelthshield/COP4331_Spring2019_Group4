@@ -1,3 +1,4 @@
+# Creating an Account
 | ID | User Story ID | Description | Validation | Implementation | Status | 
 |----|---------------|-------------|------------|----------------|--------|
 | 000 | 007 | Navigate to localhost:3000. | Confirm the screen shows a navigation bar with back/login and a create account button | MANUAL | PASS |
@@ -7,6 +8,7 @@
 | 004 | 007 | Click the password field and enter Test | Confirm you see the text populate in the text box| MANUAL | PASS |
 | 005 | 007 | Click the submit button | Confirm you see the page reload | MANUAL | PASS |
 
+# Listing a Venue
 | ID | User Story ID | Description | Validation | Implementation | Status | 
 |----|---------------|-------------|------------|----------------|--------|
 | 006 | 001 | Navigate to http://localhost:3000/home. | Confirm the screen shows a navigation bar with Home, List Venue, Book Venue, My Venues, My Bookings, and My Venue Booking Info | MANUAL | PASS |
@@ -17,6 +19,7 @@
 | 011 | 001 | Click the list venue button | Confirm you see a confirmation screen that venue was listed | MANUAL | PASS |
 | 012 | 001 | Click the My Venues button | Confirm that you see your venue listing TestStreet TestZip on the listing page | MANUAL | PASS |
 
+# Booking a Venue
 | ID | User Story ID | Description | Validation | Implementation | Status | 
 |----|---------------|-------------|------------|----------------|--------|
 | 013 | 000 | Navigate to http://localhost:3000/home. | Confirm the screen shows a navigation bar with Home, List Venue, Book Venue, My Venues, My Bookings, and My Venue Booking Info | MANUAL | PASS |
@@ -30,16 +33,19 @@
 | 021 | 000 | Click the Card Holder's Name field and enter John Test | Confirm you see the text populate in the text box | MANUAL | PASS |
 | 022 | 000 | Click the Confirm Payment button | Confirm you see a booking successful confirmation | MANUAL | PASS |
 
+# Viewing your Bookings
 | ID | User Story ID | Description | Validation | Implementation | Status | 
 |----|---------------|-------------|------------|----------------|--------|
 | 023 | 003 | Navigate to http://localhost:3000/home. | Confirm the screen shows a navigation bar with Home, List Venue, Book Venue, My Venues, My Bookings, and My Venue Booking Info | MANUAL | PASS |
 | 024 | 003 | Click the My Bookings Venues button| Confirm the screen updates with booking listings and you see 3 1 2019 --- TestStreet TestZip | MANUAL | PASS |
 
+# Viewing Your Venue Listing Booking Information
 | ID | User Story ID | Description | Validation | Implementation | Status | 
 |----|---------------|-------------|------------|----------------|--------|
 | 025 | 002 | Navigate to http://localhost:3000/home. | Confirm the screen shows a navigation bar with Home, List Venue, Book Venue, My Venues, My Bookings, and My Venue Booking Info | MANUAL | PASS |
 | 026 | 002 | Click the My Venue Booking Info button| Confirm the screen updates with booking listings and you see 3 1 2019 --- TestStreet TestZip --- Mike | MANUAL | PASS |
 
+# Deleting One of Your Listed Venues
 | ID | User Story ID | Description | Validation | Implementation | Status | 
 |----|---------------|-------------|------------|----------------|--------|
 | 027 | 013 | Navigate to http://localhost:3000/home. | Confirm the screen shows a navigation bar with Home, List Venue, Book Venue, My Venues, My Bookings, and My Venue Booking Info | MANUAL | PASS |
