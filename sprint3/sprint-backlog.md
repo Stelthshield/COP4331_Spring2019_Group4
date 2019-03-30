@@ -10,5 +10,5 @@
 | 024 | As a user, when I edit my venue, I want to be able to add a description to it, so people can read the description. | 1 | 4 | There exists a place to add descriptions of a venue | | Ryan Burns |
 | 025 | As a user, I want to be able to add a picture of my venue, so people can get an idea of what the venue looks like | 1 | 4 | There exists a place to add a picture for a venue | | Ryan Burns |
 | 026 | As a user, I want to be able to see a picture of venue, so I have an idea of what it looks like | 1 | 4 | There exists a place to view a venue | | Ryan Burns |
-| 008 | As a selling user, I want to be able to blacklist users from my venue, so I don't need to do business with them again. | 9 | 2 | When I add users to my blacklist they should not be able to interact with me | Jingxiao Wang |
-| 009 | As an admin, I want to make sure my users are over 18, so that we follow leasing laws. | 2 | 1 | When they make an account they must put in their birth date and it should verify they are over 18. | Jingxiao Wang |
+| 008 | As a selling user, I want to be able to blacklist users from my venue, so I don't need to do business with them again. | 9 | 2 | When I add users to my blacklist they should not be able to interact with me | | Jingxiao Wang |
+| 009 | As an admin, I want to make sure my users are over 18, so that we follow leasing laws. | 2 | 1 | When they make an account they must put in their birth date and it should verify they are over 18. | | Jingxiao Wang |
