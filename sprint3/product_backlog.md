@@ -25,3 +25,8 @@
 | 020 | As a user, I want to be able to sort venues by a certain criteria so that I may easily look for the one I want in order. | 7 | 3 | When the I sort by price by price the list of venues should sort the venues by price ascending or desending. | UNASSIGNED |
 | 021 | As a user, I want to favorite venues so I can easily revisit them. | 3 | 3 | When I favorite a venue it should add it to a favorites list. | UNASSIGNED |
 | 022 | As a user, I want the websites navbar to distribute links horizontally, so that it's more intuitive and asthetic. | 1 | 2 | The links are horizontal on the Navbar. | ASSIGNED |
+| 023 | As a user, I want to see a detailed description of venue before I book it, so I can understand more about what I'm booking | 1 | 4 | There exists a page to see detailed descriptions of a venue | ASSIGNED |
+| 024 | As a user, when I edit my venue, I want to be able to add a description to it, so peopel can read the description. | 1 | 4 | There exists a place to add descriptions of a venue | ASSIGNED |
+| 024 | As a user, I want to be able to add a picture of my venue, so people can get an idea of what the venue looks like | 1 | 4 | There exists a place to add a picture for a venue | ASSIGNED |
+| 025 | As a user, I want to be able to add a picture of my venue | 1 | 4 | There exists a place to add a venue | ASSIGNED |
+
