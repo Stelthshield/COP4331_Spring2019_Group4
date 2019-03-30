@@ -10,8 +10,8 @@
 | 005 | As a selling user, I want to be able to receive payment for my listed venues, so that I can make money. | 10 | 1 | When I lease my venue I should receive payment. | UNASSIGNED |
 | 006 | As a user, I want to be able to access the website so I can look at what the company has to offer. | 3 | 1 | When I type in the website name into the address bar it should appear. | COMPLETE |
 | 007 | As an unauthorized user, I want to be able to create a new account so I can buy and sell venues. | 3 | 1 | When I make an account it should allow me to gain access to website functions. | ASSIGNED |
-| 008 | As a selling user, I want to be able to blacklist users from my venue, so I don't need to do business with them again. | 9 | 2 | When I add users to my blacklist they should not be able to interact with me | UNASSIGNED |
-| 009 | As an admin, I want to make sure my users are over 18, so that we follow leasing laws. | 2 | 1 | When they make an account they must put in their birth date and it should verify they are over 18. | UNASSIGNED |
+| 008 | As a selling user, I want to be able to blacklist users from my venue, so I don't need to do business with them again. | 9 | 2 | When I add users to my blacklist they should not be able to interact with me | ASSIGNED |
+| 009 | As an admin, I want to make sure my users are over 18, so that we follow leasing laws. | 2 | 1 | When they make an account they must put in their birth date and it should verify they are over 18. | ASSIGNED |
 | 010 | As a user, I want to have a profile picture so that I can be unique. | 2 | 3 | When I upload a picture it should go on my profile.  | UNASSIGNED |
 | 011 | As a buying user, I want to be able to rate the venues I have used so that other people will know what are the best venues | 6 | 3 | When I give a venue a star rating it should display on their page.  | UNASSIGNED |
 | 012 | As a selling user, I want to be able to rate users that have rented my venues. | 6 | 3 | When I give a user a star rating it should display on their profile. | UNASSIGNED |
