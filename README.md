@@ -43,3 +43,21 @@ Our product is targeted towards the general consumer audience ages 18+ globally 
 - [Product Demonstration (YouTube Video)](https://youtu.be/jxy54gpgdu0)
 - [Website Link](Heroku link)
 https://pure-depths-38072.herokuapp.com/
+
+# Sprint 3
+
+- [Product Backlog](https://github.com/Stelthshield/COP4331_Spring2019_Group4/blob/master/sprint3/product_backlog.md)
+- [Sprint Backlog](https://github.com/Stelthshield/COP4331_Spring2019_Group4/blob/master/sprint3/sprint-backlog.md)
+  - [Burndown Chart](https://github.com/Stelthshield/COP4331_Spring2019_Group4/blob/master/sprint3/diagrams/Burndown%20Chart%20Sprint%202.png)
+- [Requirements](https://github.com/Stelthshield/COP4331_Spring2019_Group4/blob/master/sprint3/requirements.md)
+- [Design Document](https://github.com/Stelthshield/COP4331_Spring2019_Group4/blob/master/sprint3/architecture.md)
+  - [System Architecture](https://github.com/Stelthshield/COP4331_Spring2019_Group4/blob/master/sprint3/diagrams/COP4331C%20-%20Group%204-Software%20Architecture.png)
+  - [Class Diagrams](https://imgur.com/a/Z2U1CMO)
+  - [UI Diagram](https://raw.githubusercontent.com/Stelthshield/COP4331_Spring2019_Group4/master/sprint3/UI%20Diagram.png)
+- Source Code
+  - [Frontend](https://github.com/Stelthshield/COP4331_Spring2019_Group4/tree/master/venue)
+  - [Backend](https://github.com/Stelthshield/COP4331_Spring2019_Group4/tree/master/server)
+- [Test Cases](https://github.com/Stelthshield/COP4331_Spring2019_Group4/blob/master/sprint2/tests.md)
+- [Product Demonstration (YouTube Video)]()
+- [Website Link](Heroku link)
+https://pure-depths-38072.herokuapp.com/
