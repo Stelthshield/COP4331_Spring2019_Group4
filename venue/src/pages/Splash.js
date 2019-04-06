@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import NavBar from "../components/LoginNav";
+import logo from './Venue Logo V1.png';
 
 class NoMatch extends Component {
 
@@ -19,7 +20,9 @@ class NoMatch extends Component {
         return (
             <div className="container">
                 <NavBar />
-                {/* put venue logo here */}
+                <div className="logo">
+                    <img src={logo} />
+                </div>
                 <Link to="/create-account"><button type="button" className="btn btn-success">Create Account</button></Link>
                 
             </div>
