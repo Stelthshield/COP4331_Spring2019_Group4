@@ -7,7 +7,7 @@ import DatePicker from 'react-date-picker';
 import { getVenues, bookVenue, bookVenuePayment } from '../backendInterface/Venue'
 import axios from "axios";
 import Popup from "reactjs-popup";
-import { Dropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
+import {Form, FormGroup, Label, Input, FormText, Dropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
 
 class BookVenue extends Component {
 
@@ -65,55 +65,35 @@ class BookVenue extends Component {
                                 className="book-vn"
                                 color="success"
                                 trigger={<button>Book</button>} 
-                                position="center center" modal>
+                                position="center center" modal closeButton>
                                 <Container>
-                                    <Dropdown isOpen={this.state.dropdownOpen} toggle={this.toggle}>
-                                        <DropdownToggle caret>
-                                            Card Type
-                                        </DropdownToggle>
-                                        <DropdownMenu>
-                                            <DropdownItem>Visa</DropdownItem>
-                                            <DropdownItem>Master Card</DropdownItem>
-                                            <DropdownItem>American Express</DropdownItem>
-                                        </DropdownMenu>
-                                    </Dropdown>
-                                    <form>
-                                        <div className="row">
-                                            <label>Card Number</label>
-                                        </div>
-                                        <input
-                                            value={this.state.cardNumber}
-                                            onChange={this.handleInputChange}
-                                            name="cardNumber"
-                                        />
-
-                                        <div className="row">
-                                            <label>Expiration Date</label>
-                                        </div>
-                                        <input
-                                            value={this.state.expirationDate}
-                                            onChange={this.handleInputChange}
-                                            name="expirationDate"
-                                        />
-
-                                        <div className="row">
-                                            <label>CVV</label>
-                                        </div>
-                                        <input
-                                            value={this.state.CVV}
-                                            onChange={this.handleInputChange}
-                                            name="CVV"
-                                        />
-
-                                        <div className="row">
-                                            <label>Card Holder's Name</label>
-                                        </div>
-                                        <input
-                                            value={this.state.cardHolderName}
-                                            onChange={this.handleInputChange}
-                                            name="cardHolderName"
-                                        />
-                                    </form>
+                                    <Form>
+                                        <FormGroup>
+                                            <Label for="cardType">Card Type</Label>
+                                            <Input type="select" name="select" id="exampleSelect">
+                                                <option>Visa</option>
+                                                <option>Master Card</option>
+                                                <option>American Express</option>
+                                                <option>Discover</option>
+                                            </Input>
+                                        </FormGroup>
+                                        <FormGroup>
+                                            <Label for="cardNumber">Card Number</Label>
+                                            <Input type="cardNumber" name="cardNumber"/>
+                                        </FormGroup>
+                                        <FormGroup>
+                                            <Label for="expirationDate">Expiration Date</Label>
+                                            <Input type="expirationDate" name="expirationDate" placeholder="mm/yyyy"/>
+                                        </FormGroup>
+                                        <FormGroup>
+                                            <Label for="CVV">CVV</Label>
+                                            <Input type="CVV" name="CVV"placeholder="###"/>
+                                        </FormGroup>
+                                        <FormGroup>
+                                            <Label for="cardHolderName">Card Holder's Name</Label>
+                                            <Input type="cardHolderName" name="cardHolderName"/>
+                                        </FormGroup>
+                                    </Form>
                                     <div className="row">
                                         <Button
                                             className="confirm-Payment"
@@ -138,10 +118,8 @@ class BookVenue extends Component {
                                     </div>
                                 </Container>
                             </Popup>
-
                                 {streetAddress} {zipCode} {this.state.date.toString()}
                             </ListGroupItem>
-                            
                         ))}
                     </TransitionGroup>
                 </ListGroup>
@@ -149,5 +127,4 @@ class BookVenue extends Component {
         )
     }
 }
-
 export default BookVenue;
