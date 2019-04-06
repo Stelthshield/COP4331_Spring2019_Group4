@@ -65,7 +65,7 @@ class BookVenue extends Component {
                                 className="book-vn"
                                 color="success"
                                 trigger={<button>Book</button>} 
-                                position="center center" modal closeButton>
+                                position="center center" modal>
                                 <Container>
                                     <Form>
                                         <FormGroup>
