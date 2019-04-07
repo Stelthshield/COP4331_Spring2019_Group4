@@ -6,7 +6,7 @@ Install:
     Copy the files in.
     CD into the directory and run: npm i express body-parser mongoose concurrently
                                    npm i -D nodemon
-                                   npm run install
+                                   npm run client-install
                                
 Startup: 
     In the server directory run:    npm run dev
