@@ -36,6 +36,15 @@ router.get('/getByQuery', (req, res) => {
     .catch(err => res.json(err));
 });
 
+// @route GET api/venue/getByID
+// @desc Get Venues specified by ID
+// @access Public
+router.get('/getByID', (req, res) => { 
+    Venue.findById(req.body._id)
+    .then(venue => res.json(venue))
+    .catch(err => res.json(err));
+});
+
 // @route POST api/venue
 // @desc Create venue
 // @access Public
