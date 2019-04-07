@@ -26,10 +26,9 @@ const VenueSchema = new Schema({
     }, 
     description: {
         type: String
+    },
+    photoURL: {
+        type: String
     }
 })
-
-
-
-
 module.exports = Venue = mongoose.model('venue', VenueSchema);
