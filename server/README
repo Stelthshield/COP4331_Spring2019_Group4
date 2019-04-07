@@ -5,10 +5,11 @@ Install:
     Create the server folder on your own machine.
     Copy the files in.
     CD into the directory and run: npm i express body-parser mongoose concurrently
-                                   npm i -D nodemon  
+                                   npm i -D nodemon
+                                   npm run install
                                
 Startup: 
-    In the server directory run:    npm run server
+    In the server directory run:    npm run dev
   
 Use: 
     You can make a GET request localhost:5000/api/user to get all users. 
@@ -18,6 +19,3 @@ Use:
 DB Admin Access: 
     See the pinned message on discord. 
   
-
-  
- 
