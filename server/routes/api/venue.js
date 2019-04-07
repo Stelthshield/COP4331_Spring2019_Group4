@@ -86,7 +86,7 @@ router.put('/:id', (req, res) => {
         .catch(err => res.status(404).json({error: `${err}`}))
 });
 
-// @route PUT api/user/book/:id
+// @route PUT api/venue/book/:id
 // @desc Book a date
 // @access Public
 // Req Params: id, userID, date
@@ -205,6 +205,5 @@ router.put('/unverify/:id', (req, res) => {
         venue.save().then(venue => res.json(venue));
     }).catch(err => res.json(err));;
 });
-
 
 module.exports = router;

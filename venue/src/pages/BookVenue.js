@@ -4,23 +4,22 @@ import NavBar from "../components/MainNav";
 import { Container, ListGroup, ListGroupItem, Button } from 'reactstrap';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import DatePicker from 'react-date-picker';
-import { getVenues, bookVenue, bookVenuePayment } from '../backendInterface/Venue'
+import { getVenues, bookVenue, bookVenuePayment, storeVenuePayment } from '../backendInterface/Venue'
 import axios from "axios";
 import Popup from "reactjs-popup";
-import {Form, FormGroup, Label, Input, FormText, Dropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
+import {Form, FormGroup, Label, Input} from 'reactstrap';
 
 class BookVenue extends Component {
 
-    constructor(props) {
-        super(props);
-    
-        this.toggle = this.toggle.bind(this);
-        this.state = {
+    state = {
             venues: [],
             date: new Date(),
             userID: "5c86f112e368c11a6c40a677",
-            dropdownOpen: false   
-        };
+            cardType: "",
+            cardNumber: "",
+            expirationDate: "",
+            CVV: "",
+            cardHolderName: "",
     }
 
     componentDidMount() {
@@ -40,12 +39,6 @@ class BookVenue extends Component {
             console.log(res.data);
         });
     };
-    
-    toggle() {
-        this.setState(prevState => ({
-          dropdownOpen: !prevState.dropdownOpen
-        }));
-    }
 
     render() {
         const { venues } = this.state;
@@ -70,7 +63,11 @@ class BookVenue extends Component {
                                     <Form>
                                         <FormGroup>
                                             <Label for="cardType">Card Type</Label>
-                                            <Input type="select" name="select" id="exampleSelect">
+                                            <Input type="cardType" name="cardType"
+                                            value={this.state.cardType}
+                                            onChange={(event) => {
+                                            this.setState({cardType: event.target.value})}}
+                                            >
                                                 <option>Visa</option>
                                                 <option>Master Card</option>
                                                 <option>American Express</option>
@@ -79,19 +76,35 @@ class BookVenue extends Component {
                                         </FormGroup>
                                         <FormGroup>
                                             <Label for="cardNumber">Card Number</Label>
-                                            <Input type="cardNumber" name="cardNumber"/>
+                                            <Input type="cardNumber" name="cardNumber"
+                                            value={this.state.cardNumber}
+                                            onChange={(event) => {
+                                            this.setState({cardNumber: event.target.value})}}
+                                            />
                                         </FormGroup>
                                         <FormGroup>
                                             <Label for="expirationDate">Expiration Date</Label>
-                                            <Input type="expirationDate" name="expirationDate" placeholder="mm/yyyy"/>
+                                            <Input type="expirationDate" name="expirationDate" placeholder="mm/yyyy"
+                                            value={this.state.expirationDate}
+                                            onChange={(event) => {
+                                            this.setState({expirationDate: event.target.value})}}
+                                            />
                                         </FormGroup>
                                         <FormGroup>
                                             <Label for="CVV">CVV</Label>
-                                            <Input type="CVV" name="CVV"placeholder="###"/>
+                                            <Input type="CVV" name="CVV" placeholder="###"
+                                            value={this.state.CVV}
+                                            onChange={(event) => {
+                                            this.setState({CVV: event.target.value})}}
+                                            />
                                         </FormGroup>
                                         <FormGroup>
                                             <Label for="cardHolderName">Card Holder's Name</Label>
-                                            <Input type="cardHolderName" name="cardHolderName"/>
+                                            <Input type="cardHolderName" name="cardHolderName"
+                                            value={this.state.cardHolderName}
+                                            onChange={(event) => {
+                                            this.setState({cardHolderName: event.target.value})}}
+                                            />
                                         </FormGroup>
                                     </Form>
                                     <div className="row">
@@ -103,14 +116,8 @@ class BookVenue extends Component {
                                                 `${this.state.date.getMonth()} 
                                                 ${this.state.date.getDate()} 
                                                 ${this.state.date.getFullYear()}`;
-                                                let cardType = "Visa";
-                                                let cardNumber = document.getElementsByName("cardNumber")[0].value;
-                                                let expDate = document.getElementsByName("expirationDate")[0].value;
-                                                let CVV = document.getElementsByName("CVV")[0].value;
-                                                let cardHolderName = document.getElementsByName("cardHolderName")[0].value;
-
                                                 bookVenue(_id, date, this.state.userID);
-                                                //bookVenuePayment(_id, date, this.state.userID, cardType, cardNumber, expDate, CVV, cardHolderName);
+                                                storeVenuePayment(this.state.cardType, this.state.cardNumber, this.state.expirationDate, this.state.CVV, this.state.userID);
                                             }}
                                         >
                                         Confirm Payment

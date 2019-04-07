@@ -4,6 +4,7 @@ const bodyParser = require('body-parser');
 
 const user = require('./routes/api/user');
 const venue = require('./routes/api/venue');
+const paymentInformation = require('./routes/api/paymentInformation');
 
 const app = express();
 
@@ -22,6 +23,8 @@ mongoose.connect(db, { useNewUrlParser: true })
 app.use('/api/user', user);
 //  Venue Route
 app.use('/api/venue', venue);
+// Payment Information Route
+app.use('/api/paymentInformation', paymentInformation);
 
 const port = process.env.PORT || 5000;
 
