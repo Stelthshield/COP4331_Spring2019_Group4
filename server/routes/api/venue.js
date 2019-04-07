@@ -77,6 +77,10 @@ router.put('/:id', (req, res) => {
                 venue.pricePerDay = req.body.pricePerDay;
             if (req.body.verification != null)
                 venue.verification = req.body.verification;
+            if (req.body.description != null)
+                venue.description = req.body.description;
+            if (req.body.photoURL != null)
+                venue.photoURL = req.body.photoURL;
             venue.save().then(() => res.json(venue))
         })
         .catch(err => res.status(404).json({error: `${err}`}))
