@@ -64,7 +64,7 @@ class MyVenues extends Component{
                                     pathname: "/edit-venue",
                                     venueID: _id
                                  }}>
-                                    <Button style={{ marginLeft: "2rem" }}>
+                                    <Button style={{ marginLeft: "0.5rem" }}>
                                         Edit
                                     </Button>
                                 </Link>
