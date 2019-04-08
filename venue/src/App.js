@@ -9,7 +9,7 @@ import MyVenueBookingInfo from "./pages/MyVenueBookingInfo";
 import CreateAccount from "./pages/CreateAccount";
 import Home from "./pages/Home";
 import ListVenue from "./pages/ListVenue";
-import Login from "./pages/Login";
+import LoginAccount from "./pages/LoginAccount";
 import NoMatch from "./pages/NoMatch";
 import Settings from "./pages/Settings";
 import Splash from "./pages/Splash";
@@ -34,7 +34,7 @@ class App extends Component {
             <Route exact path="/my-venue-booking-info" component={MyVenueBookingInfo} />
             <Route exact path="/my-venues" component={MyVenues} />
             <Route exact path="/edit-venue" component={EditVenue} />
-            <Route exact path="/login" component={Login} />
+            <Route exact path="/login" component={LoginAccount} />
             <Route exact path="/settings" component={Settings} />
             <Route exact path="/view-venue" component={ViewVenue} />
             <Route component={NoMatch} />
