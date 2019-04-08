@@ -88,4 +88,22 @@ router.get('/getByQuery', (req, res) => {
     .then(users => res.json(users))
     .catch(err => res.json(err));
 });
+
+// @route POST api/user/user-auth
+// @desc Autherize user
+// @access Public
+router.post('/user-auth', (req, res) => { 
+    User.findOne({
+        "email": req.body.email,
+    }).then(user => {
+        if (user != null && user.password == req.body.password)
+            res.json({
+                "userID": user._id,
+                "success": "true"
+            });
+        else {
+            res.json({"success": "fail"});
+        }     
+    })
+});
 module.exports = router;
