@@ -48,7 +48,7 @@ https://pure-depths-38072.herokuapp.com/
 
 - [Product Backlog](https://github.com/Stelthshield/COP4331_Spring2019_Group4/blob/master/sprint3/product_backlog.md)
 - [Sprint Backlog](https://github.com/Stelthshield/COP4331_Spring2019_Group4/blob/master/sprint3/sprint-backlog.md)
-  - [Burndown Chart](https://github.com/Stelthshield/COP4331_Spring2019_Group4/blob/master/sprint3/diagrams/Burndown%20Chart%20Sprint%202.png)
+  - [Burndown Chart](https://github.com/Stelthshield/COP4331_Spring2019_Group4/blob/master/sprint3/diagrams/Burndown%20Sprint%203.png)
 - [Requirements](https://github.com/Stelthshield/COP4331_Spring2019_Group4/blob/master/sprint3/requirements.md)
 - [Design Document](https://github.com/Stelthshield/COP4331_Spring2019_Group4/blob/master/sprint3/architecture.md)
   - [System Architecture](https://github.com/Stelthshield/COP4331_Spring2019_Group4/blob/master/sprint3/diagrams/COP4331C%20-%20Group%204-Software%20Architecture.png)
