@@ -97,3 +97,18 @@ export const deleteVenue = (venueID) => {
         alert("Deletion Failed: " + err);
     })
 }
+
+export const updateVenue = (venueID, description, pricePerDay, photoURL) => {
+    axios.put(`http://localhost:5000/api/venue/${venueID}`, { 
+        "description": description,
+        "pricePerDay": pricePerDay,
+        "photoURL": photoURL, 
+    })
+        .then((res) => {
+            if (res.status == 200)
+                alert("Update successful")
+        })
+        .catch(err => {
+            alert("Update Failed: " + err);
+        })
+    }
