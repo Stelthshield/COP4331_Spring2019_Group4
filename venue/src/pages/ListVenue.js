@@ -13,7 +13,7 @@ class ListVenue extends Component {
         zipCode: "",
         streetAddress: "",
         pricePerDay: "",
-        userID: "5c86f112e368c11a6c40a677"
+        userID: this.props.location.userID
     }
 
 
