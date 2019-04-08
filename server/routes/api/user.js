@@ -24,7 +24,7 @@ router.post('/auth-user', (req, res) => {
         name: req.body.email,
         password: req.body.password
     })
-        .then(successOrNot => res.status(200))
+        .then(successOrNot => res.status(200).json({success: true}))
             .catch(err => res.json({success: false}))
 });
 // @route POST api/user
