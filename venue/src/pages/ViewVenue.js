@@ -13,7 +13,7 @@ class ViewVenue extends Component {
 
 
     state = {
-        userID: "5c86f112e368c11a6c40a677",
+        userID: this.props.location.userID,
         venueID: this.props.location.venueID,
         venue: {},
         date: new Date()
