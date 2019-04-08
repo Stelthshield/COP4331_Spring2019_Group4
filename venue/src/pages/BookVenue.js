@@ -112,8 +112,7 @@ class BookVenue extends Component {
                                             className="confirm-Payment"
                                             color="success"
                                             onClick={() => {
-                                                let date = 
-                                                "${this.state.date.getMonth()} + ${this.state.date.getDate()} + ${this.state.date.getFullYear()}";
+                                                let date = `${this.state.date.getMonth()} ${this.state.date.getDate()} ${this.state.date.getFullYear()}`;
                                                 bookVenue(_id, date, this.state.userID);
                                                 storeVenuePayment(this.state.cardType, this.state.cardNumber, this.state.expirationDate, this.state.CVV, this.state.userID);
                                             }}
