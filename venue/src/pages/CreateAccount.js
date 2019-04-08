@@ -1,62 +1,78 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import NavBar from "../components/MainNav";
-import { Container, ListGroup, ListGroupItem, Button, Form, FormGroup, Input, Label } from 'reactstrap';
-import { createUser } from '../backendInterface/User'
-import { Redirect } from 'react-router';
+import NavBar from "../components/LoginNav";
+import axios from "axios";
 
 class CreateAccount extends Component {
 
     state = {
         name: "",
-        password: "",
-        redirect: false
+        email: "",
+        password: ""
     }
 
+    handleInputChange = event => {
+        const { name, value } = event.target;
+        this.setState({
+            [name]: value
+        });
+    };
+
     render() {
-        if(this.state.redirect === true) {
-            return <Redirect to ="/home"/>
-        }
         return (
-                <Container>
+            <div className="container">
                 <NavBar />
-                <Form style={{paddingTop: "20px"}}>
-                    <FormGroup>
-                        <Label>User Name</Label>
-                        <Input
-                            type="text"
+                <h1>Create Account</h1>
+                <div>
+
+                    <form>
+                    <div className="row">
+                            <label>Name</label>
+                        </div>
+                        <input
                             value={this.state.name}
-                            placeholder="Required"
-                            onChange={(event) => {
-                                this.setState({name: event.target.value})
-                                }
-                            }
-                        ></Input>
-                    </FormGroup>
-                    <FormGroup>
-                        <Label>Password</Label>
-                        <Input
-                            type="text"
+                            onChange={this.handleInputChange}
+                            name="name"
+                        />
+                        <div className="row">
+                            <label>Email</label>
+                        </div>
+                        <input
+                            value={this.state.email}
+                            onChange={this.handleInputChange}
+                            name="email"
+                        />
+                        <div className="row">
+                            <label>Password</label>
+                        </div>
+                        <input
                             value={this.state.password}
-                            placeholder="Required"
-                            onChange={(event) => {
-                                this.setState({password: event.target.value})
-                                }
-                            }
-                        ></Input>
-                    </FormGroup>
-                    <Button
-                        type="submit"
-                        onClick={() => {
-                            createUser(this.state.name, this.state.password);
-                            this.setState({redirect: true});
-                        }}
-                    >
-                    Create Account
-                    </Button>
-                </Form>
-            </Container>
-        )
+                            onChange={this.handleInputChange}
+                            name="password"
+                        />
+                        <div className="row">
+                            <div id="btnContainer">
+                                <button
+                                    className="btn btn-success"
+                                    id="button-login"
+                                    disabled={!(this.state.email) || !(this.state.password)}
+                                    onClick={() => {
+                                        axios.post("http://localhost:5000/api/user", {
+                                            name: this.state.name,
+                                            password: this.state.password,
+                                            email: this.state.email
+                                        })
+                                    }}
+                                >
+                                    Submit
+                            </button>
+
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        );
     }
 }
 
