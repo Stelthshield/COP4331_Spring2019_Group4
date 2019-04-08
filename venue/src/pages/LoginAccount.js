@@ -11,26 +11,30 @@ class LoginAccount extends Component {
     state = {
         name: "",
         password: "",
-        redirect: false
+        redirect: false,
+        userID: ""
     }
 
     render() {
         if(this.state.redirect === true) {
-            return <Redirect to ="/home"/>
+            return <Redirect to ={{
+                                    pathname: "/home",
+                                    userID: this.state.userID
+            }}/>
         }
         return (
-                <Container>
+            <Container>
                 <NavBar />
-                <Form style={{paddingTop: "20px"}}>
+                <Form style={{ paddingTop: "20px" }}>
                     <FormGroup>
-                        <Label>User Name</Label>
+                        <Label>Email</Label>
                         <Input
                             type="text"
                             value={this.state.name}
                             placeholder="Required"
                             onChange={(event) => {
-                                this.setState({name: event.target.value})
-                                }
+                                this.setState({ name: event.target.value })
+                            }
                             }
                         ></Input>
                     </FormGroup>
@@ -41,19 +45,27 @@ class LoginAccount extends Component {
                             value={this.state.password}
                             placeholder="Required"
                             onChange={(event) => {
-                                this.setState({password: event.target.value})
-                                }
+                                this.setState({ password: event.target.value })
+                            }
                             }
                         ></Input>
                     </FormGroup>
                     <Button
-                        type="submit"
-                        onClick={() => {
-                        loginUser(this.state.name, this.state.password);
-                        this.setState({redirect: true});
-                        }}
-                    >
-                    Login
+                        onClick={ () => {
+                            axios.post('http://localhost:5000/api/user/user-auth', {
+                                "email": this.state.name,
+                                "password": this.state.password
+                            }).then((res) => {
+                                if (res.data.success == "true") {
+                                    this.setState({userID: res.data.userID})
+                                    this.setState({redirect: true});
+                                }
+                                else {
+                                    alert("login failed");
+                                }
+                            })
+                        }}>
+                        Login
                     </Button>
                 </Form>
             </Container>
