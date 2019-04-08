@@ -12,7 +12,7 @@ class EditVenue extends Component {
 
     state = {
         userID: "5c86f112e368c11a6c40a677",
-        venueID: "5c8838752f2a4f0fd4be75a8",
+        venueID: this.props.location.venueID,
         description: "",
         photoURL: "",
         pricePerDay: ""
