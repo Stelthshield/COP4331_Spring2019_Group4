@@ -7,6 +7,15 @@ const UserSchema = new Schema({
         type: String,
         required: true
     },
+    billingInfo: {
+        type: String,
+        required: false
+    },
+    email: {
+        type: String,
+        unique: true,
+        required: true
+    },
     password: {
         type: String,
         required: true
