@@ -4,7 +4,7 @@ import NavBar from "../components/MainNav";
 import { Container, ListGroup, ListGroupItem, Button } from 'reactstrap';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import DatePicker from 'react-date-picker';
-import { getVenues, bookVenue, storeVenuePayment } from '../backendInterface/Venue'
+import { bookVenue, storeVenuePayment, updateVenuePayment, getPaymentInformation } from '../backendInterface/Venue'
 import axios from "axios";
 import Popup from "reactjs-popup";
 import {Form, FormGroup, Label, Input} from 'reactstrap';
@@ -114,7 +114,8 @@ class BookVenue extends Component {
                                             onClick={() => {
                                                 let date = `${this.state.date.getMonth()} ${this.state.date.getDate()} ${this.state.date.getFullYear()}`;
                                                 bookVenue(_id, date, this.state.userID);
-                                                storeVenuePayment(this.state.cardType, this.state.cardNumber, this.state.expirationDate, this.state.CVV, this.state.userID);
+                                                storeVenuePayment(this.state.cardType, this.state.cardNumber, this.state.expirationDate, this.state.CVV, this.state.userID, date, _id);
+                                                //updateVenuePayment(this.state.cardType, this.state.cardNumber, this.state.expirationDate, this.state.CVV, this.state.userID);
                                             }}
                                         >
                                         Confirm Payment
