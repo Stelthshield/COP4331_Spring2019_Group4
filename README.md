@@ -58,4 +58,4 @@ https://pure-depths-38072.herokuapp.com/
   - [Frontend](https://github.com/Stelthshield/COP4331_Spring2019_Group4/tree/master/venue)
   - [Backend](https://github.com/Stelthshield/COP4331_Spring2019_Group4/tree/master/server)
 - [Test Cases](https://github.com/Stelthshield/COP4331_Spring2019_Group4/blob/master/sprint2/tests.md)
-- [Product Demonstration (YouTube Video)]()
+- [Product Demonstration (YouTube Video)](https://youtu.be/2_-Q0eubuYk)
