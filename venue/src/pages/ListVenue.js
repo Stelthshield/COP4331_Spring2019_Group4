@@ -21,7 +21,7 @@ class ListVenue extends Component {
         return (
             <Container>
                 <NavBar />
-                <Form>
+                <Form style={{paddingTop: "20px"}}>
                     <FormGroup>
                         <Label>Zip Code</Label>
                         <Input
@@ -47,7 +47,7 @@ class ListVenue extends Component {
                         ></Input>
                     </FormGroup>
                     <FormGroup>
-                        <Label>$/Day</Label>
+                        <Label>Price Per Day</Label>
                         <Input
                             type="text"
                             value={this.state.pricePerDay}

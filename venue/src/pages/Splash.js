@@ -18,11 +18,8 @@ class NoMatch extends Component {
 
     render() {
         return (
-            
             <div className="container">
-                <div className="logo">
                     <img src={logo} />
-                </div>
                 <NavBar/>
             </div>
         );
