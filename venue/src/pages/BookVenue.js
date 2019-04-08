@@ -122,7 +122,15 @@ class BookVenue extends Component {
                                     </div>
                                 </Container>
                             </Popup>
-                                {streetAddress} {zipCode} {this.state.date.toString()}
+                                {streetAddress} {zipCode}
+                                <Link to={{
+                                    pathname: "/view-venue",
+                                    venueID: _id
+                                }}>
+                                    <Button style={{ marginLeft: "35rem" }}>
+                                        Info
+                                    </Button>
+                                </Link>
                             </ListGroupItem>
                         ))}
                     </TransitionGroup>
