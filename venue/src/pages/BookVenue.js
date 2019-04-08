@@ -14,7 +14,7 @@ class BookVenue extends Component {
     state = {
             venues: [],
             date: new Date(),
-            userID: "5c86f112e368c11a6c40a677",
+            userID: this.props.location.userID,
             cardType: "",
             cardNumber: "",
             expirationDate: "",
