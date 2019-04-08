@@ -13,6 +13,7 @@ import Login from "./pages/Login";
 import NoMatch from "./pages/NoMatch";
 import Settings from "./pages/Settings";
 import Splash from "./pages/Splash";
+import EditVenue from "./pages/EditVenue";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
@@ -31,6 +32,7 @@ class App extends Component {
             <Route exact path="/my-bookings" component={MyBookings} />
             <Route exact path="/my-venue-booking-info" component={MyVenueBookingInfo} />
             <Route exact path="/my-venues" component={MyVenues} />
+            <Route exact path="/edit-venue" component={EditVenue} />
             <Route exact path="/login" component={Login} />
             <Route exact path="/settings" component={Settings} />
             <Route component={NoMatch} />
