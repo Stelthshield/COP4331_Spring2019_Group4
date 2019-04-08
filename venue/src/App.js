@@ -14,6 +14,7 @@ import NoMatch from "./pages/NoMatch";
 import Settings from "./pages/Settings";
 import Splash from "./pages/Splash";
 import EditVenue from "./pages/EditVenue";
+import ViewVenue from "./pages/ViewVenue";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
@@ -35,6 +36,7 @@ class App extends Component {
             <Route exact path="/edit-venue" component={EditVenue} />
             <Route exact path="/login" component={Login} />
             <Route exact path="/settings" component={Settings} />
+            <Route exact path="/view-venue" component={ViewVenue} />
             <Route component={NoMatch} />
           </Switch>
         </div>
