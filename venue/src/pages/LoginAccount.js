@@ -52,6 +52,10 @@ class LoginAccount extends Component {
                         console.log(axios.post('http://localhost:5000/api/user/auth-user', {
                             "name": this.state.name,
                             "password": this.state.password
+                            if(res.body.success)
+                                this.setState([redirect: true]);
+                            else
+                                this.setState([redirect: false]);
                         }))
                             
                         }}
