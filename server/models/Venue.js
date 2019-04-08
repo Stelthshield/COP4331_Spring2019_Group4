@@ -19,7 +19,9 @@ const VenueSchema = new Schema({
         type: Map
         //required: true
     },
-    pricePerDay: Number,
+    pricePerDay: {
+        type: Number
+    },
     verification: {
         type: Boolean,
         //required: true
