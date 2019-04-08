@@ -15,7 +15,7 @@ export const createUser = (name, password) => {
 };
 
 export const loginUser = (name, password) => {
-    axios.post('http://localhost:5000/api/auth-user', {
+    axios.post('http://localhost:5000/api/user/auth-user', {
         "name": name,
         "password": password,
     })
