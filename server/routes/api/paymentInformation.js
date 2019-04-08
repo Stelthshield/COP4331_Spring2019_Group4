@@ -8,11 +8,20 @@ const User = require('../../models/User.js');
 // Payment Information Model
 const PaymentInformation = require('../../models/PaymentInformation.js');
 
+// @route GET api/paymentInformation
+// @desc Get All payment information
+// @access Public
+router.get('/', (req, res) => {
+    PaymentInformation.find()
+    .then(paymentInformations => res.json(paymentInformations))
+    .catch(err => res.json(err))
+});
+
+
 // @route POST api/paymentInformation
 // @desc Create payment entity
 // @access Public
 // Req Params: cardType, cardNumber, expirationDate, CVV, userID
-// Optional Params: price
 router.post('/', (req, res) => {
     let newPaymentInformation = new PaymentInformation({
         cardType: req.body.cardType,
