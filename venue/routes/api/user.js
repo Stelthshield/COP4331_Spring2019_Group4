@@ -9,7 +9,7 @@ const User = require('../../models/User.js');
 // @access Public
 // Req Params: 
 // Optional Params:
-router.get('/api/user/auth-user', (req, res) => {
+router.get('/auth-user', (req, res) => {
     User.find({
         name: req.body.email,
         password: req.body.password

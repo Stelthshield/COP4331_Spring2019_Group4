@@ -14,6 +14,19 @@ router.get('/', (req, res) => {
     .then(users => res.json(users))
 });
 
+// @route GET api/user/auth-user
+// @desc Get a User
+// @access Public
+// Req Params: 
+// Optional Params:
+router.post('/auth-user', (req, res) => {
+    User.find({
+        name: req.body.email,
+        password: req.body.password
+    })
+        .then(successOrNot => res.json({success: true}))
+            .catch(err => res.json({success: false}))
+});
 // @route POST api/user
 // @desc Create User
 // @access Public
@@ -22,7 +35,7 @@ router.get('/', (req, res) => {
 router.post('/', (req, res) => {
     const newUser = new User({
         name: req.body.name,
-        account: req.body.account
+        password: req.body.password
     });
 
     newUser.save().then(user => res.json(user));

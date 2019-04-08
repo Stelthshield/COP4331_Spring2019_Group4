@@ -2,10 +2,11 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import NavBar from "../components/MainNav";
 import { Container, ListGroup, ListGroupItem, Button, Form, FormGroup, Input, Label } from 'reactstrap';
-import { createUser } from '../backendInterface/User'
+import { loginUser } from '../backendInterface/User'
 import { Redirect } from 'react-router';
+import axios from "axios";
 
-class CreateAccount extends Component {
+class LoginAccount extends Component {
 
     state = {
         name: "",
@@ -48,11 +49,14 @@ class CreateAccount extends Component {
                     <Button
                         type="submit"
                         onClick={() => {
-                            createUser(this.state.name, this.state.password);
-                            this.setState({redirect: true});
+                        console.log(axios.post('http://localhost:5000/api/user/auth-user', {
+                            "name": this.state.name,
+                            "password": this.state.password
+                        }))
+                            
                         }}
                     >
-                    Create Account
+                    Login
                     </Button>
                 </Form>
             </Container>
@@ -60,4 +64,4 @@ class CreateAccount extends Component {
     }
 }
 
-export default CreateAccount;
+export default LoginAccount;
