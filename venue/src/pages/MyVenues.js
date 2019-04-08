@@ -52,6 +52,14 @@ class MyVenues extends Component{
                                     Delete
                                 </Button>
                                  {streetAddress} {zipCode}
+                                 <Link to={{
+                                    pathname: "/view-venue",
+                                    venueID: _id
+                                 }}>
+                                    <Button style={{ marginLeft: "35rem" }}>
+                                        Info
+                                    </Button>
+                                </Link>
                             </ListGroupItem>
                         ))}
                     </TransitionGroup>
