@@ -57,7 +57,15 @@ class MyVenues extends Component{
                                     venueID: _id
                                  }}>
                                     <Button style={{ marginLeft: "35rem" }}>
-                                        Info
+                                        View
+                                    </Button>
+                                </Link>
+                                <Link to={{
+                                    pathname: "/edit-venue",
+                                    venueID: _id
+                                 }}>
+                                    <Button style={{ marginLeft: "2rem" }}>
+                                        Edit
                                     </Button>
                                 </Link>
                             </ListGroupItem>
