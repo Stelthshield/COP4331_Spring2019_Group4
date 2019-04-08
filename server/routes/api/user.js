@@ -20,11 +20,11 @@ router.get('/', (req, res) => {
 // Req Params: 
 // Optional Params:
 router.post('/auth-user', (req, res) => {
-    User.find({
+    User.findOne({
         name: req.body.email,
         password: req.body.password
     })
-        .then(successOrNot => res.json({success: true}))
+        .then(successOrNot => res.status(200))
             .catch(err => res.json({success: false}))
 });
 // @route POST api/user

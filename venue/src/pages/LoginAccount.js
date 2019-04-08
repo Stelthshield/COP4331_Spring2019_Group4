@@ -49,15 +49,8 @@ class LoginAccount extends Component {
                     <Button
                         type="submit"
                         onClick={() => {
-                        console.log(axios.post('http://localhost:5000/api/user/auth-user', {
-                            "name": this.state.name,
-                            "password": this.state.password
-                            if(res.body.success)
-                                this.setState([redirect: true]);
-                            else
-                                this.setState([redirect: false]);
-                        }))
-                            
+                        loginUser(this.state.name, this.state.password);
+                        this.setState({redirect: true});
                         }}
                     >
                     Login
