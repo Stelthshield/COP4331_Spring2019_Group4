@@ -18,13 +18,12 @@ class NoMatch extends Component {
 
     render() {
         return (
+            
             <div className="container">
-                <NavBar />
                 <div className="logo">
                     <img src={logo} />
                 </div>
-                <Link to="/create-account"><button type="button" className="btn btn-success">Create Account</button></Link>
-                
+                <NavBar/>
             </div>
         );
     }
