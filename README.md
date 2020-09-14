@@ -24,7 +24,6 @@ Our product is targeted towards the general consumer audience ages 18+ globally 
 - [Test Cases](https://github.com/Stelthshield/COP4331_Spring2019_Group4/blob/master/sprint1/tests.md)
 - [Product Demonstration](https://youtu.be/kp_h6RdZ3Os)
 - [Product Screenshot](https://i.imgur.com/rl9ojJv.png)
-- [Website Link](Heroku link)
 
 # Sprint 2
 
@@ -41,8 +40,7 @@ Our product is targeted towards the general consumer audience ages 18+ globally 
   - [Backend](https://github.com/Stelthshield/COP4331_Spring2019_Group4/tree/master/server)
 - [Test Cases](https://github.com/Stelthshield/COP4331_Spring2019_Group4/blob/master/sprint2/tests.md)
 - [Product Demonstration (YouTube Video)](https://youtu.be/jxy54gpgdu0)
-- [Website Link](Heroku link)
-https://pure-depths-38072.herokuapp.com/
+- [Website Link](https://pure-depths-38072.herokuapp.com/)
 
 # Sprint 3
 
@@ -59,3 +57,4 @@ https://pure-depths-38072.herokuapp.com/
   - [Backend](https://github.com/Stelthshield/COP4331_Spring2019_Group4/tree/master/server)
 - [Test Cases](https://github.com/Stelthshield/COP4331_Spring2019_Group4/blob/master/sprint2/tests.md)
 - [Product Demonstration (YouTube Video)](https://youtu.be/2_-Q0eubuYk)
+- [Website Link](https://pure-depths-38072.herokuapp.com/)
